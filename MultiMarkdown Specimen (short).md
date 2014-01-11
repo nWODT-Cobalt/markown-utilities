@@ -14,7 +14,7 @@ Specimen dribbble
 </div>
 <div style="width: 48%; float: right">
 
-<p style="margin: 10px auto 20px auto; padding: 0;">A two-lines long paragraph including a [link](http://jocelynrichard.com) and not much more.</p>
+<p style="margin: 10px auto 20px auto; padding: 0;">A two-lines long paragraph including a [link to nowhere](http://) and not much more.</p> <!-- Invalid link so that it always renders with the a:link style and be more representative -->
 
 <ul>
 	<li>Some list items</li>
@@ -45,7 +45,7 @@ Header 2
 
 ###### Header 6
 
-A two-lines long paragraph including a [link](http://jocelynrichard.com) and not much more.
+A two-lines long paragraph including a [link to nowhere](http://) and not much more. <!-- Invalid link so that it always renders with the a:link style and be more representative -->
 
 - Some list items
 - How many special people change?
