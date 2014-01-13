@@ -1,6 +1,6 @@
 /* Title: Vostock */
 /* Author: Jocelyn Richard http://jocelynrichard.com/ */
-/* Description: Basic description of the theme. Works best with the free PT fonts: http://www.paratype.com/public/ */
+/* Description: Works best with the free PT fonts: http://www.paratype.com/public/ */
 
 
 
@@ -36,7 +36,7 @@ html {font-size: 15px;}
 
 body {
 	font-family: "pt serif", Georgia, serif;
-	margin-bottom: 5rem;
+	margin: 1rem 1rem 5rem 1rem; /* Pour avoir des marges même si l'outil hôte n'en prévoit pas */
 	color: rgba(0,0,0,0.7);
 	text-shadow: 0 1px 0 white;
 	background-color: #ececec;
@@ -46,7 +46,6 @@ body {
 	max-width: 38rem;
 	margin: 0 auto;
 	margin-left: auto !important; /* Pour contrer toc.css ajouté par Marked */
-	padding: 0 1rem;
 }
 
 /* ------------------------------------------------- */
@@ -123,10 +122,23 @@ ul > li:before {
 }
 
 ul li,
-ol li {margin: 0;}
+ol li {
+	margin: 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol,
+ul p:not(:first-child),
+ol p:not(:first-child) {
+	margin-left: 2rem;
+}
 
 ul li p:first-child,
-ol li p:first-child {display: inline;}
+ol li p:first-child {
+	display: inline;
+}
 
 blockquote {
 	margin: 1rem 0 1rem 2rem;
@@ -219,6 +231,7 @@ code {
 	border: 0.0625rem solid rgba(255,255,255,0.7);
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 2px; color: #2DAB5F; /* #2DAB5F */
+	text-shadow: none;
 /*
 	border: 0.0625rem solid rgba(0,0,0,0.1);
 	background-color: rgba(0,0,0,0.03);
@@ -349,15 +362,6 @@ blockquote {
 	ul,
 	ol {
 		margin-left: 0;
-	}
-	
-	ul ul,
-	ul ol,
-	ol ul,
-	ol ol,
-	ul p:not(:first-child),
-	ol p:not(:first-child) {
-		margin-left: 2rem;
 	}
 
 }

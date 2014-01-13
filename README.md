@@ -1,7 +1,7 @@
 Markdown Utilities
 ==================
 
-**Stylesheets and other minutiae to use with Markdown.**
+**Markdown stylesheets and other minutiae.**
 
 Stylesheets
 -----------
