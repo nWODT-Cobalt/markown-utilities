@@ -1,53 +1,56 @@
 /* Title: Torpedo */
 /* Author: Jocelyn Richard http://jocelynrichard.com/ */
-/* Description: Works best with the font Cinta: http://www.myfonts.com/fonts/tipo-pepel/cinta/ */
+/* Description: A muted color palette for long-form writing or reading, suited for technical documentation. Works best with the font Cinta: http://www.myfonts.com/fonts/tipo-pepel/cinta/ */
 
 
 
 /* ================================================ */
-/* 1. Remise à zéro */
-/* 2. Squelette */
-/* 3. Media queries */
+/* 1. Reset */
+/* 2. Skeleton */
+/* 3. Media Queries */
+/* 4. Print Styles */
 /* ================================================ */
 
 
 
 /* ================================================ */
-/* 1. Remise à zéro */
+/* 1. Reset */
 /* ================================================ */
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, img {margin: 0; padding: 0; border: 0;}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;} /* Définition des balises sémantiques pour IE 6/7/8/9 et Firefox 3 */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;} /* Semantic tags definition for IE 6/7/8/9 and Firefox 3 */
 
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 
 
 
 /* ================================================ */
-/* 2. Squelette */
+/* 2. Skeleton */
 /* ================================================ */
 
 /* ------------------------------------------------- */
-/* Général */
+/* General */
 /* ------------------------------------------------- */
 
-html {font-size: 16px;}
+html {
+	font-size: 16px;
+}
 
 body {
 	font-family: 'Cinta', 'Source Sans Pro', Avenir, sans-serif;
-	margin: 1rem 1rem 5rem 1rem; /* Pour avoir des marges même si l'outil hôte n'en prévoit pas */
+	margin: 2rem 2rem 5rem 2rem; /* Get margins even if the Markdown rendering tool doesn't include any */
 	background-color: #F9F9F9; color: #636463;
 }
 
-#wrapper { /* #wrapper : id ajoutée par Marked  */
+#wrapper { /* #wrapper: added by Marked */
 	max-width: 38rem;
 	margin: 0 auto;
-	margin-left: auto !important; /* Pour contrer toc.css ajouté par Marked */
+	margin-left: auto !important; /* Countering toc.css added by Marked */
 }
 
 /* ------------------------------------------------- */
-/* Typographie */
+/* Typography */
 /* ------------------------------------------------- */
 
 h1,
@@ -56,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #febf60; /* #FFC76A */
+	color: #febf60;
 	line-height: 1.375;
 }
 
@@ -80,7 +83,7 @@ h4,
 h5,
 h6 {
 	font-size: 1rem;
-	color: #b46864; /* #a35251 */ /* #1ea886 */
+	color: #b46864;
 }
 
 h4 {
@@ -131,7 +134,7 @@ a:link {
 	background-position: 0 12px;
 }
 
-a:visited { /* Ne marche pas */
+a:visited { /* Doesn't work? */
 	background-position: 0 16px
 }
 
@@ -143,19 +146,8 @@ a:hover {
 	background-position-y: 0 0;
 }
 
-a:link, pre { /* Mentions white-space pour forcer les retours à la ligne. */		
-	white-space: pre;           /* CSS 2.0 */
-	white-space: pre-wrap;      /* CSS 2.1 */
-	white-space: pre-line;      /* CSS 3.0 */
-	white-space: -pre-wrap;     /* Opera 4-6 */
-	white-space: -o-pre-wrap;   /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space: -hp-pre-wrap;  /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
-}
-
 /* ------------------------------------------------- */
-/* Tableaux */
+/* Tables */
 /* ------------------------------------------------- */
 
 table,
@@ -175,12 +167,12 @@ table {
 th,
 td {
 	padding: 0.25rem 0.75rem;
-	max-width: 20rem; /* Pour éviter de dropper des lignes pour rien dans les cellules sans pour autant faire des tableaux gigantesques */
+	max-width: 20rem; /* Avoid dropping lines for nothing without having huge tables */
 }
 
 th {
 	border-bottom: 1px solid #da9e1a;
-	background-color: #ffd18c; /* #FFC76A */
+	background-color: #ffd18c;
 }
 
 tbody tr:nth-child(even) {
@@ -188,15 +180,15 @@ tbody tr:nth-child(even) {
 }
 
 /* ------------------------------------------------- */
-/* Divers */
+/* Misc */
 /* ------------------------------------------------- */
 
-a:link,  /* Mentions white-space pour forcer les retours à la ligne. */
+a:link, /* White-space mentions in order to force wrapping */	
 pre { 		
-	white-space:     pre;       /* CSS 2.0 */
-	white-space:     pre-wrap;  /* CSS 2.1 */
-	white-space:     pre-line;  /* CSS 3.0 */
-	white-space:    -pre-wrap;  /* Opera 4-6 */
+	white-space:      pre;      /* CSS 2.0 */
+	white-space:      pre-wrap; /* CSS 2.1 */
+	white-space:      pre-line; /* CSS 3.0 */
+	white-space:     -pre-wrap; /* Opera 4-6 */
 	white-space:   -o-pre-wrap; /* Opera 7 */
 	white-space: -moz-pre-wrap; /* Mozilla */
 	white-space:  -hp-pre-wrap; /* HP Printers */
@@ -221,7 +213,9 @@ code {
 	color: #5597e7;
 }
 
-img {max-width: 100%}
+img {
+	max-width: 100%
+}
 
 hr {
 	clear: none;
@@ -234,12 +228,19 @@ hr {
 	background-position-x: 50%;
 }
 
-::selection {background-color: #d4deea;} /* #1ea886 */
-::-moz-selection {background-color: #d4deea;} /* #5597e7 */
+::selection {
+	background-color: #D4DEEB; color: #b46864;
+	}
 
-/* #generated-toc : id ajoutée par Marked pilotant l'affichage de la table des matières */
+::-moz-selection {
+	background-color: #D4DEEB; color: #b46864;
+}
 
-#generated-toc ul li a {font-weight: normal;}
+/* #generated-toc: added by Marked for its table of contents */
+
+#generated-toc ul li a {
+	font-weight: normal;
+	}
 
 /* ------------------------------------------------- */
 /* Animations */
@@ -257,17 +258,21 @@ h4,
 h5,
 h6,
 blockquote {
-	   -moz-transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
 }
 
+
+
 /* ================================================ */
-/* 3. Media queries */
+/* 3. Media Queries */
 /* ================================================ */
 
-/* Les styles par défaut sont prévus pour l'iPhone, on rajoute des éléments de style par tranche. */
+/* Base styles are intended for smartphones; elements are then tweaked as the viewport grows. */
 
-/* iPad et desktop */
+/* ------------------------------------------------- */
+/* iPad and desktop */
+/* ------------------------------------------------- */
 
 @media only screen and (min-width: 641px) {
 
@@ -275,25 +280,35 @@ blockquote {
 
 }
 
-/* Impression */
-/* Inconsistant et buggué dans tous les navigateurs. Chrome donne les meilleurs résultats. */
+
+
+/* ================================================ */
+/* 4. Print Styles */
+/* ================================================ */
+
+/* Inconsistent and buggy across browsers */
 
 @media print {
 
 	* {
 		background: transparent !important;
-		color: #000 !important; /* Le noir imprime plus vite et les navigateurs sont de toute manière inconsistants dans le traitement de la couleur : h5bp.com/s */
+		color: #000 !important; /* Black text prints faster and browsers are inconsistent in color reproduction anyway: h5bp.com/s */
 	}
 	
 	@page {  
-		margin: 1cm; /* Combiné avec le margin de #wrapper */
+		margin: 1cm; /* Added to any #wrapper margin*/
 	} 
 	
-	html {font-size: 15px;}
+	html {
+		font-size: 15px;
+	}
+	
+	body {
+		margin: 1rem !important; /* Security margins for browser without @page support */
+	}
 	
 	#wrapper {
 		max-width: none;
-		margin: 1rem !important; /* Marge de sécurité pour les browser ne supportant pas @page */
 	}
 	
 	h1,
@@ -366,7 +381,9 @@ blockquote {
 		page-break-inside: avoid;
 	}
 	
-	#wrapper #generated-toc ul, /* Impression de la table des matières dans Marked */
+	/* #generated-toc: added by Marked for its table of contents */
+	
+	#wrapper #generated-toc ul, /* Table of contents printing in Marked */
 	#wrapper #generated-toc ol { 
 		list-style-type: decimal;
 	}
