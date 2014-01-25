@@ -1,0 +1,18 @@
+/* Title: Just Images */
+/* Author: Jocelyn Richard http://jocelynrichard.com/ */
+/* Description: heavily inspired from http://crateofpenguins.com/blog/2013-6-image-reference-pane-with-css-in-marked */
+
+body {
+	font-size: 0;
+	font-family: "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+}
+
+img {
+	margin: 16px;
+	max-width: 100%
+}
+
+figcaption {
+	font-size: 16px;
+	margin-left: 32px;
+}

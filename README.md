@@ -22,15 +22,15 @@ They really are basic stylesheets that could be applied to any HTML. They differ
 
 **Torpedo**
 
-![](torpedo.png)
+![](previews/torpedo.png)
 
 **Vostok**
 
-![](vostok.png)
+![](previews/vostok.png)
 
 Specimens
 ---------
 
-`MultiMarkdown Specimen (short).md` provides a quick sample of the most common HTML tags. It's used to make the thumbnails on this page.
+`MultiMarkdown Specimen (short).md` provides a quick sample of the most common HTML tags. It's used to make the previews on this page.
 
 `MultiMarkdown Specimen (long).md` includes most MultiMarkdown supported syntax. It's intended for development and testing.
