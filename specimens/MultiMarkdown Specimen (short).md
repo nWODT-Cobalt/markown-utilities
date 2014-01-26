@@ -1,15 +1,15 @@
 Specimen dribbble
 
-<div style="width: 400px; height: 300px; padding: 30px; border: 6px solid black;">
+<div style="width: 400px; height: 300px; padding: 16px 24px 0 24px; border: 6px solid black;">
 
-<div style="width: 48%; float: left;">
+<div style="width: 46%; float: left;">
 
-<h1 style="width: 100%; margin: 0 auto 20px auto; padding: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Header 1</h1> <!-- Pour éviter les retours à la ligne si les titres sont trop longs -->
-<h2 style="margin: 20px auto; padding: 0;">Header 2</h2>
-<h3 style="margin: 20px auto; padding: 0;">Header 3</h3>
-<h4 style="margin: 20px auto; padding: 0;">Header 4</h4>
-<h5 style="margin: 20px auto; padding: 0;">Header 5</h5>
-<h6 style="margin: 20px auto; padding: 0;">Header 6</h6>
+<h1 style="width: 100%; margin: -15px auto 10px auto; padding: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Header 1</h1> <!-- Truncates the heading if it gets too long -->
+<h2 style="width: 100%; margin: 0 auto 10px auto; padding: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Header 2</h2> <!-- Truncates the heading if it gets too long -->
+<h3 style="margin: 10px auto; padding: 0;">Header 3</h3>
+<h4 style="margin: 10px auto; padding: 0;">Header 4</h4>
+<h5 style="margin: 10px auto; padding: 0;">Header 5</h5>
+<h6 style="margin: 10px auto; padding: 0;">Header 6</h6>
 
 </div>
 <div style="width: 48%; float: right">
