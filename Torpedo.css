@@ -167,7 +167,7 @@ table {
 th,
 td {
 	padding: 0.25rem 0.75rem;
-	max-width: 20rem; /* Avoid dropping lines for nothing without having huge tables */
+	max-width: 20rem; /* Avoid dropping lines for nothing without having ridiculously wide tables */
 }
 
 th {
@@ -258,8 +258,8 @@ h4,
 h5,
 h6,
 blockquote {
-	   -moz-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
 }
 
 
