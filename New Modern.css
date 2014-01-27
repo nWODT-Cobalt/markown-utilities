@@ -45,7 +45,7 @@ body {
 }
 
 #wrapper { /* #wrapper: added by Marked */
-	max-width: 38rem;
+	max-width: 42rem;
 	margin: 0 auto;
 	margin-left: auto !important; /* Countering toc.css added by Marked */
 }
@@ -68,39 +68,42 @@ blockquote {
 }
 
 h1 {
-    font-size:   3.55rem; /* 53.2px @15px */
-    line-height: 4.8rem;
-    margin: 3.2rem auto; /* XXX */
-    padding-top: 10px; /* XXX */
+    font-size:   3.16rem; /* 47.4px @15px */
+    line-height: 4rem;
+    padding-top: 16px;
 }
 
 h2 {
-    font-size:   2.82rem; /* 42.3px @15px */
-    line-height: 4rem;
+    font-size:   2.24rem; /* 33.6px @15px */
+    line-height: 3.2rem;
 }
+
+/*
+h3 {
+    font-size:   1.59rem; 23.85px @15px
+    line-height: 2.4rem;
+}
+*/
 
 h3 {
-    font-size:   1.59rem; /* 23.85px @15px */
+    font-size:   1.41rem; /* 21.85px @15px */
     line-height: 2.4rem;
 }
 
-h4,
-h5,
-h6 {
-    font-size:   1.41rem; /* 21.85px @15px */
-    line-height: 2.4rem;
+h4 {
+    font-size:   1rem; /* 21.85px @15px */
+    line-height: 1.6rem;
+
 }
 
 h4 {
     margin: 0 0 1.6rem 0;
 }
 
-h5 {
-    margin: 0 0 1.6rem 1.6rem;
-}
-
-h6 {
-    margin: 0 0 1.6rem 2.4rem;
+h5,h6 {
+	font-size:   0.8rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
 }
 
 p,

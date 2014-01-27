@@ -32,6 +32,8 @@ They really are basic stylesheets that could be applied to any HTML. They differ
 
 ![](previews/vostok.png)
 
+**Just Images** and **Just Tables** display respectively only images and only tables. It can be handy to sift through those content types only in long documents.
+
 Specimens
 ---------
 

@@ -1,0 +1,67 @@
+/* Title: Just Images */
+/* Author: Jocelyn Richard http://jocelynrichard.com/ */
+/* Description: Displays only images and their captions. Heavily inspired from http://crateofpenguins.com/blog/2013-6-image-reference-pane-with-css-in-marked */
+
+/* ------------------------------------------------- */
+/* Reset */
+/* ------------------------------------------------- */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, img,
+figure, figcaption {margin: 0; padding: 0; border: 0;} /* Figure and figcaption are added to the usual reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;} /* Semantic tags definition for IE 6/7/8/9 and Firefox 3 */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+
+/* ------------------------------------------------- */
+/* General */
+/* ------------------------------------------------- */
+
+body {
+	font-size: 0;
+	font-family: "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; /* Academic-looking type */
+	padding-bottom: 24px;
+}
+
+#wrapper {
+	margin-left: auto !important; /* Countering toc.css added by Marked */
+	width: 100%;
+}
+
+table,
+ol,
+ul,
+hr {
+	display: none;
+}
+
+/* ------------------------------------------------- */
+/* Images */
+/* ------------------------------------------------- */
+
+img {
+	max-width: 100%;
+	padding: 24px 24px 8px 24px;
+	-moz-box-sizing:    border-box; /* Border-box mentions to prevent overflowing the viewport */
+	-webkit-box-sizing: border-box; 
+    box-sizing:         border-box;
+}
+
+figcaption {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0 24px 24px 24px;
+}
+
+figure:after {
+	background-color: #eee; 
+	content: "";
+	display: block;
+	height: 6px;
+	position: relative;
+	width: 100%;
+}
+
+figure:last-of-type:after {
+	display: none;
+}
