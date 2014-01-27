@@ -20,6 +20,10 @@ They really are basic stylesheets that could be applied to any HTML. They differ
 
 ### Styles
 
+**Godspeed**
+
+![](previews/godspeed.png)
+
 **New Modern**
 
 ![](previews/new-modern.png)
