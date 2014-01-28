@@ -119,6 +119,14 @@ ul ol,
 ol ul,
 ol ol {
 	margin-left: 1.6rem;
+	margin-top: 1.6rem;
+}
+
+#generated-toc ul ul, /* #generated-toc: added by Marked for its table of contents */
+#generated-toc ul ol,
+#generated-toc ol ul,
+#generated-toc ol ol {
+	margin-top: 0;
 }
 
 blockquote {
@@ -192,10 +200,13 @@ figcaption {
 	font-size:   0.85rem;
     line-height: 1.6rem;
 	margin: 0 1.6rem;
+	text-align: left;
 }
 
-a:link, /* White-space mentions in order to force wrapping */	
-pre { 		
+h1, /* White-space mentions in order to force wrapping */
+h2,
+a:link,
+pre {
 	white-space:      pre;      /* CSS 2.0 */
 	white-space:      pre-wrap; /* CSS 2.1 */
 	white-space:      pre-line; /* CSS 3.0 */
