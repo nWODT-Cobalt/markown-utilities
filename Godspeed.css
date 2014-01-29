@@ -2,14 +2,12 @@
 /* Author: Jocelyn Richard http://jocelynrichard.com/ */
 /* Description: A quirky, low-contrast theme. Works best with the font Brush Up: http://www.myfonts.com/fonts/pintassilgo/brush-up/ */
 
-/* TABLE RESPONSIVE COMME DANS BOOTSTRAP */
-
 /* ================================================ */
 /* 1. Reset */
 /* 2. Skeleton */
 /* 3. Media Queries */
 /* 4. Print Styles */
-/* 4. Godspeed override */
+/* 4. Godspeed Overrides */
 /* ================================================ */
 
 
@@ -18,7 +16,8 @@
 /* 1. Reset */
 /* ================================================ */
 
-html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, img {margin: 0; padding: 0; border: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0;} /* Edited from http://www.cssreset.com/scripts/eric-meyer-reset-css/ */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;} /* Semantic tags definition for IE 6/7/8/9 and Firefox 3 */
 
@@ -40,7 +39,7 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif; 
-	margin: 1.6rem 1.6rem 3.2rem 1.6rem; /* Get margins even if the Markdown rendering tool doesn't include any */
+	margin: 2.4rem 2.4rem 3.2rem 2.4rem; /* Get margins even if the Markdown rendering tool doesn't include any */
 	background-color: white;
 	color: #222;
 }
@@ -94,14 +93,9 @@ h3 {
 h4 {
     font-size:   1rem; /* 21.85px @15px */
     line-height: 1.6rem;
-
 }
 
-h4 {
-    margin: 0 0 1.6rem 0;
-}
-
-h5,h6 {
+h5, h6 {
 	font-size:   0.8rem;
     line-height: 1.6rem;
     text-transform: uppercase;
@@ -113,7 +107,7 @@ ul,
 blockquote {
     font-size:   1rem;
     line-height: 1.6rem;
-} 
+}
 
 ul ul,
 ul ol,
@@ -128,16 +122,14 @@ ol ol {
 #generated-toc ol ul,
 #generated-toc ol ol {
 	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 blockquote {
 	margin: 0 0 1.6rem 2.4rem;
 	font-style: italic;
-}
-
-code {
-	font-family: Monaco, "Andale Mono", "Courier New", monospace;
-	font-size: 80%;
 }
 
 a:link {
@@ -188,6 +180,11 @@ tbody tr:nth-child(odd) {
 	background-color: #f9f9f9;
 }
 
+
+table code {
+	font-size: 85%;
+}
+
 /* ------------------------------------------------- */
 /* Misc */
 /* ------------------------------------------------- */
@@ -220,7 +217,7 @@ pre {
 
 code {
 	font-family: "Menlo", "Courier New", "Courier", monospace;
-	font-size: 0.85rem;
+	font-size: 85%;
 	color: #666;
 	background-color: rgba(0,0,0,0.08);
 	padding: 2px 4px;
@@ -336,6 +333,7 @@ blockquote {
 /* ------------------------------------------------- */
 
 @media only screen and (min-width: 1281px) {
+
 }
 
 @media only screen and (min-width: 1441px) {
@@ -464,23 +462,18 @@ blockquote {
 
 
 /* ================================================ */
-/* 1. Godspeed overrides */
+/* 1. Godspeed Overrides */
 /* ================================================ */
 
 /* ------------------------------------------------- */
 /* General */
 /* ------------------------------------------------- */
 
-
-html {
-	font-size: 16px;
-}
-
 body {
 	font-family: 'Source Sans Pro', Avenir, sans-serif;
 	background-color: #3c3d46;
-	color: #7d7d7a; /* 939086 */
-	margin-bottom: 1.6rem; /* Visual tweak */
+	color: #7d7d7a;
+	margin-bottom: 2.4rem; /* Visual tweak */
 }
 
 #wrapper {
@@ -496,7 +489,7 @@ body {
 h1 {
 	font-size: 4rem;
 	line-height: 4.8rem;
-	font-family: 'Brush Up Too', 'Brush Script MT', 'Mistral', serif;
+	font-family: 'Brush Up Too', 'Source Sans Pro', Avenir, sans-serif;
 	color: #e6ceaa;
 }
 
@@ -551,13 +544,16 @@ tbody tr:nth-child(odd) {
 /* ------------------------------------------------- */
 
 code {
-	font-size: 80%;
 	color: #3c3d46;
 	background-color: #7d7d7a;
 }
 
 pre {
 	background-color: rgba(60,75,94,0.5);
+}
+
+pre code {
+	color: #7d7d7a;
 }
 
 hr {
@@ -584,10 +580,26 @@ a:focus {
 
 @media only screen and (min-width: 641px) {
 
+	html {
+		font-size: 16px;
+	}
+
 	#wrapper {
 		padding: 0 2.4rem;
 		border: 1px solid rgba(0,0,0,0.2) !important; /* !important otherwise doesn't show up in Marked */
 		box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
 	}
 	
+}
+
+/* ------------------------------------------------- */
+/* Widescreens */
+/* ------------------------------------------------- */
+
+@media only screen and (min-width: 1441px) {
+
+	html {
+		font-size: 22px;
+	}
+
 }
