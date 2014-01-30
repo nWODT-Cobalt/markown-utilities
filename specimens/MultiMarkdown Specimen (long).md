@@ -19,6 +19,7 @@ Response from the French industry was strong, with every major manufacturer send
 Variants
 --------
 
+[Production Batches]
 | Variant 	        | Length 	                | Engines 	            | Passengers |
 | ----------------- | ------------------------- | --------------------- | ---------- |
 | Caravelle I    	| 32.01 m (105 ft 0 in) 	| RA-29 Mk.522          | 80         |

@@ -59,12 +59,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ol,
-ul,
-blockquote {
-    margin: 0 0 1.6rem 0;
+h6 {
+    margin-bottom: 1.2rem;
 }
 
 h1 {
@@ -107,6 +103,7 @@ ul,
 blockquote {
     font-size:   1rem;
     line-height: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 ul ul,
@@ -180,7 +177,6 @@ tbody tr:nth-child(odd) {
 	background-color: #f9f9f9;
 }
 
-
 table code {
 	font-size: 85%;
 }
@@ -199,6 +195,10 @@ figcaption {
     line-height: 1.6rem;
 	margin: 0 1.6rem;
 	text-align: left;
+}
+
+figcaption {
+	margin-bottom: 1.6rem;
 }
 
 h1, /* White-space mentions in order to force wrapping */
@@ -268,7 +268,7 @@ hr {
 	clear: none;
 	height: 0.2rem;
 	border: none;
-	margin: 0 auto 1.4rem auto;
+	margin: 0 auto 1.4rem auto; /* 2.4rem auto 2.2rem auto; */
 	width: 100%;
 	color: #ccc;
 	background-color: #ccc;
@@ -544,6 +544,7 @@ tbody tr:nth-child(odd) {
 /* ------------------------------------------------- */
 
 code {
+	font-size: 75%; /* Matching better Source Sans  */
 	color: #3c3d46;
 	background-color: #7d7d7a;
 }
