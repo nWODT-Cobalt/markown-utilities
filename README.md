@@ -44,7 +44,7 @@ They really are basic stylesheets that could be applied to any HTML. They differ
 
 ---
 
-**Just Images** and **Just Tables** display respectively only images and only tables. It can be handy to sift through those content types only in long documents.
+**Table of Figures** and **Table of Tables** display respectively only the images and tables of the loaded Markdown document. It can be handy to sift through those content types only in long documents.
 
 Specimens
 ---------

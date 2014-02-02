@@ -7,7 +7,7 @@
 /* 2. Skeleton */
 /* 3. Media Queries */
 /* 4. Print Styles */
-/* 4. Godspeed Overrides */
+/* 5. Godspeed Overrides */
 /* ================================================ */
 
 
@@ -66,7 +66,6 @@ h6 {
 h1 {
     font-size:   3.16rem; /* 47.4px @15px */
     line-height: 4rem;
-    padding-top: 16px;
 }
 
 h2 {
@@ -129,6 +128,12 @@ blockquote {
 	font-style: italic;
 }
 
+ol li blockquote, /* So that blockquote work in lists */
+ul li blockquote {
+	display: inline;
+	margin-left: 0;
+}
+
 a:link {
 	text-decoration: none;
 	color: #165bd4;
@@ -166,7 +171,7 @@ td {
 }
 
 th {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 2px solid #222;
 }
 
 tr {
@@ -462,7 +467,7 @@ blockquote {
 
 
 /* ================================================ */
-/* 1. Godspeed Overrides */
+/* 5. Godspeed Overrides */
 /* ================================================ */
 
 /* ------------------------------------------------- */

@@ -50,7 +50,7 @@ img {
 figcaption {
 	font-size: 16px;
 	line-height: 20px;
-	padding: 0 24px 24px 24px;
+	padding: 0 24px 24px 18px; /* 18 rather than 24px for visual balance */
 }
 
 figure:after {

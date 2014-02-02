@@ -47,20 +47,13 @@ table {
 	border: 1px solid #ccc;
 }
 
-thead {
-	border: 1px solid #4C4C4C 
-}
-
 th,
 td {
 	padding: 0.5rem 0.75rem;
 }
 
 th {
-	background-color: #4C4C4C;
-	border-bottom: 1px solid #4C4C4C;
-	color: white;
-	text-shadow: 0px -1px 0px black;
+	border-bottom: 2px solid #222;
 }
 
 tr {
@@ -71,9 +64,21 @@ tbody tr:nth-child(odd) {
 	background-color: #f9f9f9;
 }
 
+table code {
+	font-size: 85%;
+}
+
 /* ------------------------------------------------- */
 /* Misc */
 /* ------------------------------------------------- */
+
+caption {
+	font-size:   0.85rem;
+    line-height: 1.6rem;
+	margin: 0 1.6rem;
+	text-align: left;
+	font-family: "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; /* Academic-looking type */
+}
 
 table code {
 	font-family: "Menlo", "Courier New", "Courier", monospace;
