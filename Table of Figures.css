@@ -19,7 +19,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevents i
 
 body {
 	font-size: 0;
-	font-family: "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; /* Academic-looking type */
 	padding-bottom: 24px;
 }
 
@@ -47,10 +46,13 @@ img {
     box-sizing:         border-box;
 }
 
+a img {display: none;}
+
 figcaption {
 	font-size: 16px;
 	line-height: 20px;
-	padding: 0 24px 24px 18px; /* 18 rather than 24px for visual balance */
+	padding: 0 24px 24px 48px; /* 18 rather than 24px for visual balance */
+	font-family: "Hoefler Text", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; /* Academic-looking type */
 }
 
 figure:after {
