@@ -96,6 +96,10 @@ h5, h6 {
     text-transform: uppercase;
 }
 
+h6 {
+	margin-left: 1.6rem;
+}
+
 p,
 ol,
 ul,
@@ -125,7 +129,9 @@ ol ol {
 
 blockquote {
 	margin: 0 0 1.6rem 2.4rem;
-	font-style: italic;
+	padding-left: 0.8rem; /* Voire */
+	border-left: 4px solid rgba(0,0,0,0.08);
+	font-style: normal;
 }
 
 ol li blockquote, /* So that blockquote work in lists */
@@ -518,7 +524,6 @@ h5 {
 }
 
 h6 {
-	margin-left: 1rem;
 	color: rgba(0,0,0,0.5);
 }
 
@@ -545,6 +550,10 @@ ol ol,
 ul p:not(:first-child),
 ol p:not(:first-child) {
 	margin-left: 1.6rem;
+}
+
+blockquote {
+	border-left: 2px solid rgba(0,0,0,0.5);
 }
 
 a:link {
@@ -619,8 +628,8 @@ hr {
 	border: none;
 	margin: 1.5rem auto;
 	width: 14rem;
-	color: rgba(0,0,0,0.6);
-	background-color: rgba(0,0,0,0.6);
+	color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
 }
 
 ::selection {

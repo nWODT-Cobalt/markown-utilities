@@ -96,6 +96,10 @@ h5, h6 {
     text-transform: uppercase;
 }
 
+h6 {
+	margin-left: 1.6rem;
+}
+
 p,
 ol,
 ul,
@@ -125,7 +129,9 @@ ol ol {
 
 blockquote {
 	margin: 0 0 1.6rem 2.4rem;
-	font-style: italic;
+	padding-left: 0.8rem; /* Voire */
+	border-left: 4px solid rgba(0,0,0,0.08);
+	font-style: normal;
 }
 
 ol li blockquote, /* So that blockquote work in lists */
@@ -521,6 +527,11 @@ figcaption {
 	font-weight: 300;
 }
 
+blockquote {
+	border-color: #efefef;
+}
+
+
 a:link,
 a:visited,
 a:hover,
@@ -578,6 +589,7 @@ tbody tr:nth-child(even) {
 
 code {
 	color: #5597e7;
+	padding: 0; /* PLus besoin car plus de risque de collision avec l'arrière-plan coloré */
 	background-color: transparent;
 }
 
