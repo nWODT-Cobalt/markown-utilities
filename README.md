@@ -41,6 +41,10 @@ Stylesheets
 
 **Table of Figures** and **Table of Tables** respectively display only the images and tables of the loaded Markdown document. It can be handy to sift through those content types only in long documents.
 
+---
+
+Chrisopedia's excellent [Base16](https://github.com/chrisopedia/base16-marked) themes are well worth a download.
+
 ### Installation
 
 Depending on the editor used (e.g. [Marked](http://markedapp.com/), [MultiMarkdown Composer](http://multimarkdown.com/), [Mou](http://mouapp.com/) on the Mac, [Elements](http://www.secondgearsoftware.com/elements/) on iPhone/iPad), look for "Style", "Stylesheet", "Theme" or "CSS", usually in the Preferences. Proceed to import the `.css` files as offered.
