@@ -1,7 +1,7 @@
 Markdown Utilities
 ==================
 
-Markdown stylesheets and other minutiae.
+Markdown stylesheets and other minutiae. Click the `Download ZIP` button at right.
 
 Stylesheets
 -----------
