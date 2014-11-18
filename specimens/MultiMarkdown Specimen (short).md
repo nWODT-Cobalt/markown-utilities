@@ -1,6 +1,6 @@
 Specimen dribbble
 
-<div style="width: 400px; height: 300px; padding: 16px 24px 0 24px; border: 6px solid black;">
+<div style="width: 400px; height: 300px; padding: 16px 24px 0 24px; border: 6px solid black;" class="clients" markdown="1"> <!-- Hack so that Marked 2  parses Markdown in HTML block elements -->
 
 <div style="width: 46%; float: left;">
 
@@ -12,9 +12,9 @@ Specimen dribbble
 <h6 style="margin: 10px auto; padding: 0;">Header 6</h6>
 
 </div>
-<div style="width: 48%; float: right">
+<div style="width: 48%; float: right" class="clients" markdown="1"> <!-- Hack so that Marked 2  parses Markdown in HTML block elements -->
 
-<p style="margin: 10px auto 20px auto; padding: 0;">A two-lines long paragraph including a [link to nowhere](http://) and not much more.</p> <!-- Invalid link so that it always renders with the a:link style and be more representative -->
+<p style="margin: 10px auto 20px auto; padding: 0;">A two-lines long paragraph including a [link to nowhere](http://) and not much more.</p> <!-- Invalid link so that it always renders with the unvisited a:link style -->
 
 <ul>
 	<li>Some list items</li>
@@ -29,7 +29,7 @@ Specimen dribbble
 
 Specimen iPhone
 
-<div style="width: 320px; padding: 30px; border: 6px solid black;">
+<div style="width: 320px; padding: 30px; border: 6px solid black;" class="clients" markdown="1"> <!-- Hack so that Marked 2  parses Markdown in HTML block elements -->
 
 Header 1
 ========
@@ -45,7 +45,7 @@ Header 2
 
 ###### Header 6
 
-A two-lines long paragraph including a [link to nowhere](http://) and not much more. <!-- Invalid link so that it always renders with the a:link style and be more representative -->
+A two-lines long paragraph including a [link to nowhere](http://) and not much more. <!-- Invalid link so that it always renders with the unvisited a:link style -->
 
 - Some list items
 - How many special people change?
