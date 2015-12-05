@@ -38,12 +38,12 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif; 
-	margin: 2.4rem 2.4rem 3.2rem 2.4rem; /* Get margins even if the Markdown rendering tool doesn't include any */
+	margin: 1.71rem 1.71rem  3rem 1.71rem ; /* Get margins even if the Markdown rendering app doesn't include any */
 	background-color: white;
 	color: #222;
 }
 
-#wrapper { /* #wrapper: added by Marked */
+#wrapper { /* #wrapper: ID added by Marked */
 	max-width: 42rem;
 	margin: 0 auto;
 	margin-left: auto !important; /* Countering toc.css added by Marked */
@@ -59,42 +59,41 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+h1,
+h2,
+h3
+{
+    margin-top: 3.2rem;
 }
 
 h1 {
-    font-size:   3.16rem; /* 47.4px @15px */
-    line-height: 4rem;
+    font-size:   3.57rem; /* 53.2px @15px */
+    line-height: 4rem;    /* 60px @15px */ 
 }
 
 h2 {
     font-size:   2.24rem; /* 33.6px @15px */
-    line-height: 3.2rem;
+    line-height: 2.8rem;  /* 42px @15px */
 }
-
-/*
-h3 {
-    font-size:   1.59rem; 23.85px @15px
-    line-height: 2.4rem;
-}
-*/
 
 h3 {
     font-size:   1.41rem; /* 21.85px @15px */
-    line-height: 2.4rem;
+    line-height: 2.4rem;  /* 36px @15px */
 }
 
 h4 {
-    font-size:   1rem; /* 21.85px @15px */
-    line-height: 1.6rem;
+    font-size:   1rem;   /* 21.85px @15px */
+    line-height: 1.6rem; /* 24px @15px */
 }
 
 h5, h6 {
 	font-size:   0.8rem;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     text-transform: uppercase;
 }
-
 
 h6 {
 	margin-left: 1.6rem;
@@ -104,8 +103,8 @@ p,
 ol,
 ul,
 blockquote {
-    font-size:   1rem;
-    line-height: 1.6rem;
+    font-size:     1rem;
+    line-height:   1.6rem;
     margin-bottom: 1.6rem;
 }
 
@@ -114,16 +113,16 @@ ul ol,
 ol ul,
 ol ol {
 	margin-left: 1.6rem;
-	margin-top: 1.6rem;
+	margin-top:  1.6rem;
 }
 
 #generated-toc ul ul, /* #generated-toc: added by Marked for its table of contents */
 #generated-toc ul ol,
 #generated-toc ol ul,
 #generated-toc ol ol {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 0;
+	margin-top:     0;
+	margin-bottom:  0;
+	padding-top:    0;
 	padding-bottom: 0;
 }
 
@@ -325,7 +324,7 @@ blockquote {
 /* 3. Media Queries */
 /* ================================================ */
 
-/* Base styles are intended for smartphones; elements are then tweaked as the viewport grows. */
+/* Base styles are for smartphones; elements are then tweaked as the viewport grows. */
 
 /* ------------------------------------------------- */
 /* iPad and desktop */
@@ -337,15 +336,15 @@ blockquote {
 		font-size: 15px;
 	}
 	
+	body {
+		margin: 2.4rem 2.4rem 3.2rem 2.4rem;
+	}
+	
 }
 
 /* ------------------------------------------------- */
 /* Widescreens */
 /* ------------------------------------------------- */
-
-@media only screen and (min-width: 1281px) {
-
-}
 
 @media only screen and (min-width: 1441px) {
 
