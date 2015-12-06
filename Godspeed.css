@@ -12,19 +12,6 @@
 
 
 
-/* Title: New Modern */
-/* Author: Jocelyn Richard http://jocelynrichard.com/ */
-/* Description: Baseline style, meant to be used on its own or to serve as development basis. */
-
-/* ================================================ */
-/* 1. Reset */
-/* 2. Skeleton */
-/* 3. Media Queries */
-/* 4. Print Styles */
-/* ================================================ */
-
-
-
 /* ================================================ */
 /* 1. Reset */
 /* ================================================ */
@@ -61,6 +48,7 @@ body {
 	max-width: 42rem;
 	margin: 0 auto;
 	margin-left: auto !important; /* Countering toc.css added by Marked */
+	padding: 0 !important;        /* Countering toc.css added by Marked */
 }
 
 /* ------------------------------------------------- */
@@ -77,29 +65,27 @@ h6 {
 }
 
 h1,
-h2,
-h3
-{
+h2 {
     margin-top: 3.2rem;
 }
 
 h1 {
-    font-size:   3.57rem; /* 53.2px @15px */
-    line-height: 4rem;    /* 60px @15px */ 
+    font-size:   2.82rem; /* 42.3px @15px */
+    line-height: 3.2rem;  /* 48px @15px */ 
 }
 
 h2 {
-    font-size:   2.24rem; /* 33.6px @15px */
-    line-height: 2.8rem;  /* 42px @15px */
-}
-
-h3 {
-    font-size:   1.41rem; /* 21.85px @15px */
+    font-size:   1.99rem; /* 29.9px @15px */
     line-height: 2.4rem;  /* 36px @15px */
 }
 
+h3 {
+    font-size:   1.41rem; /* 21.2px @15px */
+    line-height: 2rem;    /* 30px @15px */
+}
+
 h4 {
-    font-size:   1rem;   /* 21.85px @15px */
+    font-size:   1rem;   /* 15px @15px */
     line-height: 1.6rem; /* 24px @15px */
 }
 
@@ -147,9 +133,12 @@ blockquote {
 	font-style: normal;
 }
 
+blockquote ul {
+	margin-left: 0.8rem; /* Pour ne pas que les hanging bullets mordent sur le blockquote  */
+}
+
 ol li blockquote, /* So that blockquote work in lists */
 ul li blockquote {
-	display: inline;
 	margin-left: 0;
 }
 
@@ -354,6 +343,16 @@ blockquote {
 		margin: 2.4rem 2.4rem 3.2rem 2.4rem;
 	}
 	
+	h1 {
+    	font-size:   3.57rem; /* 53.2px @15px */
+		line-height: 4rem;    /* 60px @15px */ 
+	}
+	
+	h2 {
+		font-size:   2.24rem; /* 33.6px @15px */
+		line-height: 2.8rem;  /* 42px @15px */
+	}
+	
 }
 
 /* ------------------------------------------------- */
@@ -500,19 +499,11 @@ body {
 	margin-bottom: 2.4rem; /* Visual tweak */
 }
 
-#wrapper {
-	max-width: 46.8rem;
-	border-radius: 4px;
-	padding: 0 0.8rem;
-}
-
 /* ------------------------------------------------- */
 /* Typography */
 /* ------------------------------------------------- */
 
 h1 {
-	font-size: 4rem;
-	line-height: 4.8rem;
 	font-family: 'Brush Up Too', 'Source Sans Pro', Avenir, sans-serif;
 	color: #e6ceaa;
 }
@@ -617,6 +608,8 @@ a:focus {
 		padding: 0 2.4rem;
 		border: 1px solid rgba(0,0,0,0.2) !important; /* !important otherwise doesn't show up in Marked */
 		box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+		padding: 2.4rem !important;
+		border-radius: 4px;
 	}
 	
 }
