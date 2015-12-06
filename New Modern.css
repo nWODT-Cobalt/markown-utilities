@@ -38,7 +38,7 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	margin: 1.71rem 3.42rem !important; /* Get margins even if the Markdown rendering app doesn't include any */
+	margin: 3.42rem 1.71rem !important; /* Get margins even if the Markdown rendering app doesn't include any */
 	background-color: white;
 	color: #222;
 }
@@ -46,8 +46,8 @@ body {
 #wrapper { /* #wrapper: ID added by Marked */
 	max-width: 42rem;
 	margin: 0 auto;
-	margin-left: auto !important; /* Countering toc.css added by Marked */
-	padding: 0 !important;        /* Countering toc.css added by Marked */
+	margin-left: auto !important;  /* Countering toc.css added by Marked */
+	padding: 1.71rem 0 !important; /* Countering toc.css added by Marked */
 }
 
 /* ------------------------------------------------- */
