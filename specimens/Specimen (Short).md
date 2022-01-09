@@ -1,5 +1,3 @@
-Specimen dribbble
-
 <div style="width: 400px; height: 300px; padding: 16px 24px 0 24px; border: 6px solid black;" class="clients" markdown="1"> <!-- Hack so that Marked 2  parses Markdown in HTML block elements -->
 
 <div style="width: 46%; float: left;">
@@ -26,29 +24,3 @@ Specimen dribbble
 </div>
 
 <div style="display: block; clear: both; visibility: hidden; line-height: 0; height: 0;"></div>
-
-Specimen iPhone
-
-<div style="width: 320px; padding: 30px; border: 6px solid black;" class="clients" markdown="1"> <!-- Hack so that Marked 2  parses Markdown in HTML block elements -->
-
-Header 1
-========
-
-Header 2
---------
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-A two-lines long paragraph including a [link to nowhere](http://) and not much more. <!-- Invalid link so that it always renders with the unvisited a:link style -->
-
-- Some list items
-- How many special people change?
-- How many lives are living strange?
-
-</div>
