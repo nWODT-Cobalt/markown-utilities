@@ -1,19 +1,9 @@
-/*
-This document has been created with Marked.app <https://marked2app.com>
-Content is property of the document author
-Please leave this notice in place, along with any additional credits below.
----------------------------------------------------------------
-Title: UXASF1
-Author: Jocelyn Richard
-URL: https://jocelynrichard.com/
-Description: Fairly standard sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
-Fonts: Inter
-Note: xxx
----
-*/
+/* Title: New UXASF1 */
+/* Author: Jocelyn Richard http://jocelynrichard.com/ */
+/* Description: Baseline style, meant to be used on its own or to serve as development basis. */
 
 /* ================================================ */
-/* Baseline */
+/* 1. Baseline */
 /* ================================================ */
 
 html {

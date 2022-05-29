@@ -14,8 +14,11 @@ Atom setup:
 ## Stylesheets
 
 Custom CSS style for Marked. Could be reused elsewhere, provided `#wrapper` selectors are removed.
+Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
 
-**UXASF1**, with free [Inter](https://rsms.me/inter/). Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa).  
+**UXASF1**  
+Fairly standard sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa).  
+Fonts: [Inter](https://rsms.me/inter/) (free).  
 ![](previews/UXASF1.png)
 
 Older stylesheets, not updated since 2015 ↓
@@ -40,11 +43,10 @@ Display only the images of the current document.
 
 Display only the tables of the current document.
 
-## Specimens
+## Resources
 
 Sample documents for development and testing.
 
-- `Short Specimen.md`: common Markdown tags; used to make the previews for this readme
-- `Long Specimen.md`: almost all MultiMarkdown tags, for more exhaustive work
-
-Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
+- `Checklist`: roughly prioritized reminder of HTML tags and Marked operators to cover
+- `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
+- `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work

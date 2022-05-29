@@ -1,9 +1,5 @@
 # Checklist
 
-A roughly prioritized list of HTML tags and Marked operators, for the iterative development of stylesheets.
-
----
-
 Baseline tags:
 
 - [ ] `H1`, `H2`, `H3`, `H4`
@@ -21,6 +17,8 @@ Features:
 
 Advanced tags:
 
+- [ ] `selection`
+- [ ] links `focus`
 - [ ] `H5`, `H6`
 - [ ] `table`, including `th`
 - [ ] tables' `caption`
