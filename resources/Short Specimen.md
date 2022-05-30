@@ -18,7 +18,7 @@
 
 <p style="margin: 10px auto 20px auto; padding: 0;">A couple paragraphs of lorem ipsum. Dolor sit amet, consectetur adipiscing elit. Mauris cursus elit vel malesuada iaculis, ullamcorper ultricies.</p>
 
-<p style="margin: 10px auto 20px auto; padding: 0;">Donec congue vehicula tellus nec scelerisque. [A link to nowhere](http://) duis dictum imperdiet quam, sit amet efficitur tellus imperdiet a.</p>
+<p style="margin: 10px auto 20px auto; padding: 0;">Donec congue vehicula tellus nec scelerisque. [A link to nowhere](https://) duis dictum imperdiet quam, sit amet efficitur tellus imperdiet a.</p>
 <!-- Invalid link target, so that it always renders with the unvisited a:link style -->
 
 <ul>

@@ -12,16 +12,23 @@ Baseline tags:
 Features:
 
 - [ ] print styles
-- [ ] inverted theme
 - [ ] responsiveness
 
 Advanced tags:
 
+- [ ] `p` within `ul`/`ol`
+- [ ] img
+- [ ] `figure` and `figcaption`
+- [ ] `table`, including `th` and inline `code`
+- [ ] tables' `caption`
 - [ ] `selection`
 - [ ] links `focus`
 - [ ] `H5`, `H6`
-- [ ] `table`, including `th`
-- [ ] tables' `caption`
-- [ ] `p` within `ul`/`ol`
 - [ ] `hr`
-- [ ] `figure` and `figcaption`
+- [ ] description list (`dl`, `dt`, `dd`)
+- [ ] footnotes
+
+Advanced Features:
+
+- [ ] inverted theme
+- [ ] beautified code

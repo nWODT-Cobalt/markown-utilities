@@ -8,17 +8,15 @@
 Atom setup:
 
 - [Hypest](https://hector.me/hypest-atom) UI and syntax themes
-- [document-outline](https://atom.io/packages/document-outline), [folding-markdown](https://atom.io/packages/folding-markdown), [smart-quotes-plus](https://atom.io/packages/smart-quotes-plus), [wordcount](https://atom.io/packages/wordcount) packages
+- [document-outline](https://atom.io/packages/document-outline), [folding-markdown](https://atom.io/packages/folding-markdown), [markdown-table-editor](https://atom.io/packages/markdown-table-editor), [smart-quotes-plus](https://atom.io/packages/smart-quotes-plus), [wordcount](https://atom.io/packages/wordcount) packages
 - Personal prefs: disable `tree-view` package, set `Editor/Tab Length` to `4`
 
 ## Stylesheets
 
-Custom CSS style for Marked. Could be reused elsewhere, provided `#wrapper` selectors are removed.
-Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
+Custom CSS styles for Marked. Could be reused elsewhere, provided `#wrapper` selectors are removed.
 
 **UXASF1**  
-Fairly standard sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa).  
-Fonts: [Inter](https://rsms.me/inter/) (free).  
+Run-of-the-mill sans-serif style, with a big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Fonts: [Inter](https://rsms.me/inter/) (free).  
 ![](previews/UXASF1.png)
 
 Older stylesheets, not updated since 2015 ↓
@@ -35,12 +33,10 @@ Older stylesheets, not updated since 2015 ↓
 **Vostok** (with free [PT Serif, PT Sans and PT Sans Narrow](https://company.paratype.com/pt-sans-pt-serif))  
 ![](previews/vostok.png)
 
-**Table of Figures**
-
+**Table of Figures**  
 Display only the images of the current document.
 
-**Table of Tables**
-
+**Table of Tables**  
 Display only the tables of the current document.
 
 ## Resources
@@ -49,4 +45,6 @@ Sample documents for development and testing.
 
 - `Checklist`: roughly prioritized reminder of HTML tags and Marked operators to cover
 - `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
-- `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work
+- `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first half prints tags for completeness check, the second one prints long form text for typographic rythm check.
+
+Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
