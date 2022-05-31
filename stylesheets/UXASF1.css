@@ -6,15 +6,38 @@ Please leave this notice in place, along with any additional credits below.
 Title: UXASF1
 Author: Jocelyn Richard
 URL: https://jocelynrichard.com/
-Description: Fairly standard sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
-Fonts: Inter
-Note: body style + ancillaries style; headings scale, etc
+Description: Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
+Fonts: Inter, iA Writer Mono S
+Notes:
+	- H1/H2 have tight leading, with significant top-padding
+	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily shorter bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
+	- Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
+	- 
+	- spacing logic 
+	- Colors are exclusively from the UXA style guide
 ---
 */
 
-/* ================================================ */
-/* Baseline */
-/* ================================================ */
+/* ------------------------------ */
+/* 1. Reset */
+/* ------------------------------ */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code,
+dl, dt, dd, ol, ul, li, supo, sub,
+img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* ------------------------------ */
+/* 2. Baseline */
+/* ------------------------------ */
 
 html {
 	font-size: 16px;
@@ -30,110 +53,103 @@ body {
 }
 
 h1 {
-	font-size:   5rem;
+	font-size: 5rem;
     line-height: 1.05;
-	margin-bottom: 1.6rem;
-	margin-top: 3.2rem;
+	margin-bottom: 1.5rem;
+	margin-top: 3rem;
 	font-weight: 900;
 }
 
 h2 {
-    font-size:   1.99rem;
-    line-height: 2.8rem;
-	margin-bottom: 1.6rem;
-	margin-top: 3.2rem;
+    font-size: 1.99rem;
+    line-height: 1.05;
+	margin-bottom: 1.5rem;
+	margin-top: 3rem;
 	font-weight: 800;
 }
 
 h3 {
-    font-size:   1.41rem;
-    line-height: 2rem;
-    margin-bottom: 1.6rem;
+    font-size: 1.41rem;
+    line-height: 1.2;
+    margin: 1.5rem 0 1.25rem 0;
 }
 
 h4 {
-    font-size:   1rem;
-    line-height: 1.6rem;
-    margin-bottom: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 1.5rem 0 1.25rem 0;
 }
 
 
 h5 {
-	font-size:   0.8rem;
-    line-height: 1.2rem;
+	font-size: 0.7rem;
+    line-height: 1.75;
     text-transform: uppercase;
-    margin-bottom: 1.6rem;
+    margin: 1.5rem 0 1.25rem 0;
 }
-
 
 h6 {
-	font-size:   0.8rem;
-    line-height: 1.2rem;
+	font-size: 0.7rem;
+    line-height: 1.75;
     text-transform: uppercase;
-    margin-bottom: 1.6rem;
-	margin-left: 1.6rem;
+    margin: 1.5rem 0 1.25rem 1.5rem;
 }
 
-p {
-    font-size:     1rem;
-    line-height:   1.8rem;
-    margin-bottom: 0.75rem;
-    font-weight:   400;	
+p,
+dl,
+#wrapper ol,
+#wrapper ul {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0.75rem 0;
+    font-weight: 400;
 }
 
-ol,
-ul {
-    font-size:     1rem;
-    line-height:   1.8rem;
-    margin-bottom: 0.75rem;
-    font-weight:   400;
+dt {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 600;
 }
 
-/*
-ol,
-ul,
-blockquote {
-    font-size:     1rem;
-    line-height:   1.8rem;
-    margin-bottom: 0.75rem;
-    font-weight:   400;
+dd {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0 0 0.75rem 0;
+    font-weight: 400;
 }
-
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-	margin-left: 1.6rem;
-	margin-top:  1.6rem;
-}
-*/
 
 #wrapper ul {
 	list-style: none;
 	list-style-position: outside;
-	margin: 0; /* No idea what's going but they don't show up when printing otherwise */
-	padding-left: 1.2rem;
+/* 	padding-left: 1.2rem; */
 }
 
-#wrapper ul li {
+#wrapper ul > li {
 	text-indent: -1rem;
 }
 
-#wrapper ul li::before {
+#wrapper ul > li::before {
 	content: "–";
 	padding-right: 0.5rem;
+}
+
+#wrapper ul ul,
+#wrapper ul ol,
+#wrapper ol ul,
+#wrapper ol ol {
+	margin: 0 0 0 2rem;
 }
 
 #wrapper a:link {
 	text-decoration: none;
 	color: #0117E6;
-	border-bottom: 4px solid rgba(0,0,0,0.08);
+	border-bottom: 4px solid #EEEEEE; /* Gris 0134 @ 50%, beeuh */
 	font-weight: 600;
 }
 
 #wrapper a:visited {
 	color: #232323;
-	border-bottom: 4px solid rgba(0,0,0,0.08);
+	border-bottom: 4px solid #EEEEEE;
 }
 
 #wrapper a:hover {
@@ -143,25 +159,15 @@ ol ol {
 }
 
 #wrapper a:active {
-	background-color: #e6e6e6;
+	background-color: #EEEEEE;
 }
 
 blockquote { /* Bricolage */
-	margin: 0 0 1.6rem 2rem;
+	margin: 0 0 0 2rem;
 	padding-left: 1rem;
-	border-left: 4px solid rgba(0,0,0,0.08);
+	border-left: 4px solid #EEEEEE;
 	font-style: normal;
-	color: #8c8c8c;
-}
-
-hr { /* Bricolage */
-	clear: none;
-	height: 4px;
-	border: none;
-	margin: 3rem auto 1rem auto;
-	width: 100%;
-	color: rgba(0,0,0,0.08);
-	background-color: rgba(0,0,0,0.08);
+	color: #797979;
 }
 
 table {
@@ -171,18 +177,21 @@ table {
 	border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
 	border: 1px solid #232323;	
 }
 
 th,
 td {
-	padding: 0.5rem 0.75rem;
+	padding: 0.5rem;
 }
 
 caption,
-figcaption { /* +footnotes */
-	font-size: 0.75rem;
+figcaption,
+.footnotes { /* +footnotes ul li weird spacing */
+	font-size: 0.85rem;
 	font-family: 'Inter', sans-serif;
     line-height: 1.6rem;
 	margin: 0;
@@ -192,23 +201,22 @@ figcaption { /* +footnotes */
 
 code {
 	font-family: 'iA Writer Mono S', monospace;
-	font-size: 85%;
-	color: #666;
-	background-color: rgba(0,0,0,0.08);
+	color: #797979;
+	background-color: #EEEEEE;
 	padding: 2px 4px;
-	border-radius: 2px;
+	border-radius: 0;
 }
 
 pre {
-	background-color: rgba(0,0,0,0.08);
-	border-radius: 8px;
-	padding: 0.4rem;
-	margin-bottom: 1.6rem;
+	background-color: #EEEEEE;
+	border-radius: 0;
+	padding: 0.5rem;
+	margin-bottom: 0.75rem;
+	border-radius: 0;
 }
 
-pre code { /* Counter the code mentions */
-	background-color: transparent;
-	padding: 0;
+pre code {
+		font-size: 0.85rem;
 }
 
 figure {
@@ -222,7 +230,34 @@ img {
 	max-width: 100%;
 }
 
+sup { /* Good practices from https://gist.github.com/unruthless/413930 */
+}
 
+#wrapper a.footnote {
+    color: #797979;
+    border: 0;
+    font-weight: 600;
+    padding-left: 0.125rem;
+	font-size: 75%;
+	height: 0; /* Hmmm */
+	line-height: 0; /* Hmmm */
+	position: relative;
+	vertical-align: super;
+}
+
+#wrapper a:hover.footnote {
+    color: #0117E6;
+}
+
+hr {
+	clear: none;
+	height: 4px;
+	border: none;
+	margin: 3rem auto 1rem auto;
+	width: 100%;
+	color: #EEEEEE;
+	background-color: #EEEEEE;
+}
 
 /* ================================================ */
 /* 2. Utilities */
@@ -296,4 +331,13 @@ blockquote {
 
 @media print {
 	
+	#wrapper ul,
+	#wrapper ol {
+		margin: 0; /* No idea what's going but they don't show up when printing otherwise */
+/*
+			text-indent: 0;
+			padding-right: 0;
+*/
+	}
+
 }

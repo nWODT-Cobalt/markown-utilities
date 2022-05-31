@@ -1,6 +1,6 @@
 # Checklist
 
-Baseline tags:
+**Baseline tags:**
 
 - [ ] `H1`, `H2`, `H3`, `H4`
 - [ ] `p`, with `em` and `strong`
@@ -9,26 +9,31 @@ Baseline tags:
 - [ ] `code` and `pre`
 - [ ] `blockquote`
 
-Features:
+**Features:**
 
 - [ ] print styles
 - [ ] responsiveness
 
-Advanced tags:
+**Advanced tags:**
 
 - [ ] `p` within `ul`/`ol`
-- [ ] img
+- [ ] `img`
 - [ ] `figure` and `figcaption`
 - [ ] `table`, including `th` and inline `code`
 - [ ] tables' `caption`
 - [ ] `selection`
-- [ ] links `focus`
+- [ ] link `focus`
 - [ ] `H5`, `H6`
 - [ ] `hr`
 - [ ] description list (`dl`, `dt`, `dd`)
 - [ ] footnotes
 
-Advanced Features:
+**Advanced Features:**
 
 - [ ] inverted theme
+
+**Publication:**
+
+- [ ] [Marked header](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Header.css), including dependencies and design intention recap
+- [ ] `readme` description identical to header description
 - [ ] beautified code
