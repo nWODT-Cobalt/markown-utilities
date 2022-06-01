@@ -9,25 +9,23 @@ URL: https://jocelynrichard.com/
 Description: Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
 Fonts: Inter, iA Writer Mono S
 Notes:
-	- H1/H2 have tight leading, with significant top-padding
-	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily shorter bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
 	- Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
-	- 
-	- spacing logic 
+	- H1/H2 have tight leading, with significant top-padding
+	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
 	- Colors are exclusively from the UXA style guide
 ---
 */
 
 /* ------------------------------ */
-/* 1. Reset */
+/* Reset */
 /* ------------------------------ */
 
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code,
 dl, dt, dd, ol, ul, li, supo, sub,
 img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: 0;
     outline: 0;
     font-size: 100%;
@@ -36,7 +34,7 @@ img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 /* ------------------------------ */
-/* 2. Baseline */
+/* Styles */
 /* ------------------------------ */
 
 html {
@@ -55,16 +53,14 @@ body {
 h1 {
 	font-size: 5rem;
     line-height: 1.05;
-	margin-bottom: 1.5rem;
-	margin-top: 3rem;
+    margin: 3rem 0 1.5rem 0;
 	font-weight: 900;
 }
 
 h2 {
     font-size: 1.99rem;
     line-height: 1.05;
-	margin-bottom: 1.5rem;
-	margin-top: 3rem;
+    margin: 3rem 0 1.5rem 0;
 	font-weight: 800;
 }
 
@@ -121,11 +117,14 @@ dd {
 #wrapper ul {
 	list-style: none;
 	list-style-position: outside;
-/* 	padding-left: 1.2rem; */
 }
 
 #wrapper ul > li {
 	text-indent: -1rem;
+}
+
+#wrapper ol > li {
+	text-indent: 0; /* pourkwaaaaaaa */
 }
 
 #wrapper ul > li::before {
@@ -143,13 +142,13 @@ dd {
 #wrapper a:link {
 	text-decoration: none;
 	color: #0117E6;
-	border-bottom: 4px solid #EEEEEE; /* Gris 0134 @ 50%, beeuh */
+	border-bottom: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
 	font-weight: 600;
 }
 
 #wrapper a:visited {
 	color: #232323;
-	border-bottom: 4px solid #EEEEEE;
+	border-bottom: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
 }
 
 #wrapper a:hover {
@@ -159,21 +158,53 @@ dd {
 }
 
 #wrapper a:active {
-	background-color: #EEEEEE;
+	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
 }
 
-blockquote { /* Bricolage */
-	margin: 0 0 0 2rem;
+#wrapper a:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #FF6C03;
+	border-radius: 1px;
+	padding: 2px;
+}
+
+blockquote {
+	margin: 1rem 0 1rem 2rem; /* 1rem vertical margin to account for the border's visual hoverang */
 	padding-left: 1rem;
-	border-left: 4px solid #EEEEEE;
+	border-left: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
 	font-style: normal;
 	color: #797979;
+}
+
+code {
+	font-family: 'iA Writer Mono S', monospace;
+	color: #797979;
+	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
+	padding: 2px 4px;
+	border-radius: 0;
+}
+
+pre {
+	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
+	border-radius: 0;
+	padding: 0.5rem;
+	margin-bottom: 0.75rem;
+	border-radius: 0;
+}
+
+pre code {
+	font-size: 0.85rem;
+	background-color: transparent;
+}
+
+img {
+	max-width: 100%;
 }
 
 table {
 	font-family: 'iA Writer Mono S', monospace;
 	font-size: 0.85rem;
-	margin: 0 0 1.6rem 0;
+	margin: 0 0 1.5rem 0;
 	border-collapse: collapse;
 }
 
@@ -190,47 +221,14 @@ td {
 
 caption,
 figcaption,
-.footnotes { /* +footnotes ul li weird spacing */
+.footnotes ol li,
+.footnotes p {
 	font-size: 0.85rem;
 	font-family: 'Inter', sans-serif;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 	margin: 0;
 	text-align: left;
 	color: #797979;
-}
-
-code {
-	font-family: 'iA Writer Mono S', monospace;
-	color: #797979;
-	background-color: #EEEEEE;
-	padding: 2px 4px;
-	border-radius: 0;
-}
-
-pre {
-	background-color: #EEEEEE;
-	border-radius: 0;
-	padding: 0.5rem;
-	margin-bottom: 0.75rem;
-	border-radius: 0;
-}
-
-pre code {
-		font-size: 0.85rem;
-}
-
-figure {
-	padding: 0;
-	margin: 0;
-}
-
-img {
-	margin: 0;
-	padding: 0;
-	max-width: 100%;
-}
-
-sup { /* Good practices from https://gist.github.com/unruthless/413930 */
 }
 
 #wrapper a.footnote {
@@ -239,8 +237,8 @@ sup { /* Good practices from https://gist.github.com/unruthless/413930 */
     font-weight: 600;
     padding-left: 0.125rem;
 	font-size: 75%;
-	height: 0; /* Hmmm */
-	line-height: 0; /* Hmmm */
+	height: 0;
+	line-height: 0;
 	position: relative;
 	vertical-align: super;
 }
@@ -253,50 +251,24 @@ hr {
 	clear: none;
 	height: 4px;
 	border: none;
-	margin: 3rem auto 1rem auto;
+	margin: 3rem auto;
 	width: 100%;
-	color: #EEEEEE;
-	background-color: #EEEEEE;
-}
-
-/* ================================================ */
-/* 2. Utilities */
-/* ================================================ */
-
-h1, /* White-space mentions in order to force wrapping */
-h2,
-a:link,
-pre {
-	white-space:      pre;      /* CSS 2.0 */
-	white-space:      pre-wrap; /* CSS 2.1 */
-	white-space:      pre-line; /* CSS 3.0 */
-	white-space:     -pre-wrap; /* Opera 4-6 */
-	white-space:   -o-pre-wrap; /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space:  -hp-pre-wrap; /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
+	color: hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
+	background-color: hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
 }
 
 ::selection {
-	background-color: hsla(25, 100%, 51%, 0.1); /* #FF6C03 */	
 	color: #FF6C03;
+	background-color: hsla(25, 100%, 51%, 0.1); /* Orange 0283 Brûlé #FF6C03 */
 }
 
-::-moz-selection {
-	background-color: hsla(25, 100%, 51%, 0.1); /* #FF6C03 */	
-	color: #FF6C03;
-}
-
-a:focus {
-	outline: none;
-	box-shadow: 0 0 0 4px #FFC800;
-	border-radius: 1px;
-	padding: 2px;
-}
-
-a {
-	   -moz-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
+h1,
+h2,
+a, /* :link ? */
+pre { /* To force wrapping */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3.0 */
+	white-space: -hp-pre-wrap; /* HP Printers */
 }
 
 h1,
@@ -305,15 +277,23 @@ h3,
 h4,
 h5,
 h6,
-p,
-blockquote {
-	   -moz-transition: all 0.2s ease;
-	-webkit-transition: all 0.2s ease;
+blockquote { /* Transitioning p elements might cause duplication bugs when printing. Somehow can't be mitigated by print styles. */
+	transition: all 0.2s ease;
 }
 
-/* ================================================ */
-/* 3. Responsiveness */
-/* ================================================ */
+a {
+	transition: all 0.1s ease-in-out;
+}
+
+/* ------------------------------ */
+/* Inverted */
+/* ------------------------------ */
+
+
+
+/* ------------------------------ */
+/* Responsiveness */
+/* ------------------------------ */
 
 @media only screen and (min-width: 961px) {
 	
@@ -323,21 +303,21 @@ blockquote {
 	
 }
 
-/* ================================================ */
-/* 3. Print */
-/* ================================================ */
-
-/* DOM objects font-size need be set independently  */
+/* ------------------------------ */
+/* Print */
+/* ------------------------------ */
 
 @media print {
-	
+
 	#wrapper ul,
 	#wrapper ol {
-		margin: 0; /* No idea what's going but they don't show up when printing otherwise */
-/*
-			text-indent: 0;
-			padding-right: 0;
-*/
+		margin-left: 0;
+		list-style-position: inside;
+	}
+
+	#wrapper ul > li,
+	#wrapper ol > li {
+		text-indent: 0;
 	}
 
 }

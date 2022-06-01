@@ -13,7 +13,13 @@ Atom setup:
 
 ## Stylesheets
 
-Custom CSS styles for Marked. Could be reused elsewhere, provided `#wrapper` selectors are removed.
+### Installation
+
+Adding the stylesheets to Marked: `Marked 2` → `Preferences` → `Style`.
+
+The stylesheets haven't been tested in other tools. However they're generic CSS and could be reused elsewhere, provided the Marked-specific `#wrapper` selectors are removed.
+
+### Gallery
 
 **UXASF1**  
 Run-of-the-mill sans-serif style, with a big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Fonts: [Inter](https://rsms.me/inter/) (free).  
