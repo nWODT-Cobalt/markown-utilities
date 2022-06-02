@@ -272,6 +272,13 @@ hr {
 	color: #FF6C03 !important;
 }
 
+#wrapper .mkstyledtag { /* Marked tags */
+	background-color: hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */
+	color: #F8F8F8;
+	border-radius: 999px;
+	padding: 0.3rem 0.75rem !important;
+}
+
 h1,
 h2,
 a, /* :link ? */
@@ -368,6 +375,11 @@ a {
 	.inverted hr {
 		background-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+	}
+
+	#wrapper .mkstyledtag { /* Marked tags */
+		background-color: #F8F8F8;
+		color: hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */
 	}
 
 }
