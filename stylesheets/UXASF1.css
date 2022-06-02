@@ -178,13 +178,11 @@ blockquote {
 
 code {
 	font-family: 'iA Writer Mono S', monospace;
-	font-size: 0.95rem;
+	font-size: 90%;
 	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
 	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
 	border-radius: 0;
 	padding: 2px 4px;
-	position: relative;
-	top: -0.075rem;
 }
 
 pre {
@@ -333,12 +331,12 @@ a {
 
 	.inverted blockquote {
 		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted code {
 		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted pre {
@@ -360,7 +358,7 @@ a {
 	.inverted .footnotes ol li,
 	.inverted .footnotes p,
 	.inverted #wrapper a.footnote {
-		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 
 	.inverted #wrapper a:hover.footnote {
