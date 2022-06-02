@@ -12,7 +12,7 @@ Notes:
 	- Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
 	- H1/H2 have tight leading, with significant top-padding
 	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
-	- Colors are exclusively from the UXA style guide
+	- Colors from the UXA style guide
 ---
 */
 
@@ -52,16 +52,16 @@ body {
 
 h1 {
 	font-size: 5rem;
+	font-weight: 900;
 	line-height: 1.05;
 	margin: 3rem 0 1.5rem 0;
-	font-weight: 900;
 }
 
 h2 {
 	font-size: 1.99rem;
+	font-weight: 800;
 	line-height: 1.05;
 	margin: 3rem 0 1.5rem 0;
-	font-weight: 800;
 }
 
 h3 {
@@ -96,22 +96,22 @@ dl,
 #wrapper ol,
 #wrapper ul {
 	font-size: 1rem;
+	font-weight: 400;
 	line-height: 1.75;
 	margin: 0.75rem 0;
-	font-weight: 400;
 }
 
 dt {
 	font-size: 1rem;
-	line-height: 1.75;
 	font-weight: 600;
+	line-height: 1.75;
 }
 
 dd {
 	font-size: 1rem;
+	font-weight: 400;
 	line-height: 1.75;
 	margin: 0 0 0.75rem 0;
-	font-weight: 400;
 }
 
 #wrapper ul {
@@ -140,25 +140,25 @@ dd {
 }
 
 #wrapper a:link {
-	text-decoration: none;
 	color: #0117E6;
-	border-bottom: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
 	font-weight: 600;
+	text-decoration: none;
+	border-bottom: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
 }
 
 #wrapper a:hover {
 	color: #0117E6;
-	padding-bottom: 1px;
 	border-bottom: 2px solid #0117E6;
+	padding-bottom: 1px;
 }
 
 #wrapper a:active {
-	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
+	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
 }
 
 #wrapper a:visited {
 	color: #232323;
-	border-bottom: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
+	border-bottom: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
 }
 
 #wrapper a:focus {
@@ -171,35 +171,37 @@ dd {
 blockquote {
 	margin: 1rem 0 1rem 2rem; /* 1rem vertical margin to account for the border's visual hoverang */
 	padding-left: 1rem;
-	border-left: 4px solid hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
+	border-left: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
 	font-style: normal;
-	color: #797979;
+	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
 }
 
 code {
 	font-family: 'iA Writer Mono S', monospace;
-	color: #797979;
-	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
-	padding: 2px 4px;
+	font-size: 0.95rem;
+	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
+	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
 	border-radius: 0;
+	padding: 2px 4px;
+	position: relative;
+	top: -0.075rem;
 }
 
 pre {
-	background-color: hsla(0, 0%, 87%, 0.5); /* Gris 0134 #FF6C03 */
+	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
 	border-radius: 0;
-	padding: 0.5rem;
 	margin-bottom: 0.75rem;
-	border-radius: 0;
+	padding: 0.5rem;
 }
 
 pre code {
-	font-size: 0.85rem;
 	background-color: transparent;
+	padding: 0;
 }
 
 img {
-	max-width: 100%;
 	height: auto;
+	max-width: 100%;
 }
 
 table {
@@ -212,7 +214,7 @@ table {
 table,
 th,
 td {
-	border: 1px solid #232323;	
+	border: 1px solid hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */	
 }
 
 th,
@@ -224,22 +226,22 @@ caption,
 figcaption,
 .footnotes ol li,
 .footnotes p {
-	font-size: 0.85rem;
 	font-family: 'Inter', sans-serif;
+	font-size: 0.85rem;
 	line-height: 1.5rem;
-	margin: 0;
 	text-align: left;
-	color: #797979;
+	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
+	margin: 0;
 }
 
 #wrapper a.footnote {
-	color: #797979;
-	border: 0;
+	font-size: 0.75rem;
 	font-weight: 600;
-	padding-left: 0.125rem;
-	font-size: 75%;
-	height: 0;
 	line-height: 0;
+	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */;
+	border: 0;
+	height: 0;
+	padding-left: 0.125rem;
 	position: relative;
 	vertical-align: super;
 }
@@ -254,13 +256,13 @@ figcaption,
 }
 
 hr {
-	clear: none;
+	color: hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */;
+	background-color: hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */;
 	height: 4px;
+	width: 100%;
 	border: none;
 	margin: 3rem auto;
-	width: 100%;
-	color: hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
-	background-color: hsla(0, 0%, 87%, 1); /* Gris 0134 #FF6C03 */
+	clear: none;
 }
 
 ::selection {
@@ -277,11 +279,11 @@ h2,
 a, /* :link ? */
 pre,
 pre code { /* From https://css-tricks.com/snippets/css/make-pre-text-wrap/ */
-	white-space: pre-wrap;	   /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;	  /* Opera 4-6 */
-	white-space: -o-pre-wrap;	/* Opera 7 */
-	word-wrap: break-word;	   /* Internet Explorer 5.5+ */
+	white-space:      pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space:     -pre-wrap; /* Opera 4-6 */
+	white-space:   -o-pre-wrap;	/* Opera 7 */
+	word-wrap:      break-word; /* Internet Explorer 5.5+ */
 }
 
 h1,
@@ -307,40 +309,40 @@ a {
 	.inverted,
 	.inverted #wrapper {
 		background-color: #232323;
-		color: #F8F8F8;
+		color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 
 	.inverted #wrapper a:link {
+		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 		color: #C4F244;
-		border-color: hsla(0, 0%, 55%, 0.75); /* Gris 0336 #8C8C8C  */
 	}
 
 	.inverted #wrapper a:hover {
-		color: #C4F244;
 		border-color: #C4F244;
+		color: #C4F244;
 	}
 	
 	.inverted #wrapper a:active {
-		background-color: hsla(0, 0%, 55%, 0.25); /* Gris 0336 #8C8C8C */
+		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted #wrapper a:visited {
-		color: #232323;
-		border-color: hsla(0, 0%, 55%, 0.75); /* Gris 0336 #8C8C8C */
+		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 
 	.inverted blockquote {
-		border-color: hsla(0, 0%, 55%, 0.5); /* Gris 0336 #8C8C8C */
-		color: #8C8C8C;
+		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted code {
-		color: #8C8C8C;
-		background-color: hsla(0, 0%, 55%, 0.15); /* Gris 0336 #8C8C8C */
+		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted pre {
-		background-color: hsla(0, 0%, 55%, 0.15); /* Gris 0336 #8C8C8C */
+		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 	
 	.inverted pre code {
@@ -350,7 +352,7 @@ a {
 	.inverted table,
 	.inverted th,
 	.inverted td {
-		border-color: #F8F8F8;	
+		border-color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */;	
 	}
 
 	.inverted caption,
@@ -358,7 +360,7 @@ a {
 	.inverted .footnotes ol li,
 	.inverted .footnotes p,
 	.inverted #wrapper a.footnote {
-		color: #8C8C8C;
+		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 
 	.inverted #wrapper a:hover.footnote {
@@ -366,8 +368,8 @@ a {
 	}
 
 	.inverted hr {
-		color: hsla(0, 0%, 55%, 1); /* Gris 0336 #8C8C8C */
-		background-color: hsla(0, 0%, 55%, 1); /* Gris 0336 #8C8C8C */
+		background-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
+		color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
 
 }

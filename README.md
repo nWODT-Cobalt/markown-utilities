@@ -22,7 +22,7 @@ The stylesheets haven't been tested in other tools. However they're generic CSS 
 ### Gallery
 
 **UXASF1**  
-Run-of-the-mill sans-serif style, with a big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Fonts: [Inter](https://rsms.me/inter/) (free).  
+Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Supports high contrast mode . Fonts: [Inter](https://rsms.me/inter/) and [iA Writer Duo](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Duo), both free.  
 ![](previews/UXASF1.png)
 
 Older stylesheets, not updated since 2015 ↓
@@ -49,7 +49,6 @@ Display only the tables of the current document.
 
 Sample documents for development and testing.
 
-- `Checklist`: roughly prioritized reminder of HTML tags and Marked operators to cover
 - `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
 - `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first half prints tags for completeness check, the second one prints long form text for typographic rythm check.
 
