@@ -14,7 +14,7 @@ Morbi a *em varius mauris*. Duis pharetra orci et facilisis congue. Cras non dic
 
 Aenean dignissim rhoncus justo at volutpat[^1]. Morbi vehicula in eros ut auctor. Vestibulum magna sem[^note], eleifend et blandit vitae, semper a arcu. In ut risus mauris. Suspendisse et consectetur lorem. Pellentesque *em gravida eu lectus a rhoncus*. Vivamus porta enim accumsan erat consectetur, in posuere libero iaculis. Duis efficitur nulla in porttitor consectetur. Ut vulputate lobortis purus id fringilla. Sed in ante auctor sapien rhoncus malesuada a a est.
 
-[^1]: Numerically-referenced footnote
+[^1]: Numerically-referenced footnote. Aenean eget laoreet tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dapibus efficitur tincidunt. Integer vehicula accumsan magna et hendrerit.
 [^note]: Name-referenced footnote
 
 ![Image Caption](markdown-specimen-image@2x.png)
@@ -68,12 +68,14 @@ dt elementum tortor
 
 Paragraph not part of the description list. In maximus pellentesque diam, sed posuere nunc vehicula ut. Fusce at commodo urna. Sed facilisis neque quam, sed pharetra elit eleifend quis. Donec orci ante, tempus nec velit at, eleifend consectetur tellus.
 
-```json
+```
 {
-	"desc": "pre fenced code block",
-	"visual inspection": "mono styling, syntax coloring, text-wrapping, tabs/spaces integrity"
+	"desc": "fenced pre code block",
+	"protocol" : "enable/disable poetry in `Marked 2` → `Preferences` → `Style`",
+	"visual inspection": "with poetry enabled: mono styling, text-wrapping, tabs/spaces integrity"
 }
 ```
+
 Nam vehicula, orci ac sollicitudin gravida, odio tortor dapibus lectus, ac ornare erat sapien nec odio. Donec gravida imperdiet velit at dapibus. Nam dapibus ipsum in nulla vulputate, a luctus nisl hendrerit.
 
 ---
