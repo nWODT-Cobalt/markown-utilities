@@ -133,6 +133,12 @@ dd {
 	margin-right: 1rem;
 }
 
+#wrapper ul > li,
+#wrapper ol > li {
+  text-indent: -1.5rem;
+  padding-left: 1.75rem;
+}
+
 #wrapper ol > li:before {
 	content: counter(compteur) ".";
 	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
@@ -143,7 +149,7 @@ dd {
 #wrapper ul ol,
 #wrapper ol ul,
 #wrapper ol ol {
-	margin: 0 0 0 2rem;
+	margin: 0 0 0 1rem;
 }
 
 #wrapper a:link {

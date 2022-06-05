@@ -2,8 +2,10 @@
 
 ## Markdown Setup
 
-[Atom](https://atom.io/) for editing, along with the excellent [Marked](https://marked2app.com/) for rendering.
+On Mac/PC: [Atom](https://atom.io/) for editing, [Marked](https://marked2app.com/) for rendering.
 [TableFlip](TableFlip) for table-heavy documents.
+
+On iOS/Android: [iA Writer](https://ia.net/writer).
 
 Atom setup:
 
