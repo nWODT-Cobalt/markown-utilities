@@ -9,8 +9,9 @@ URL: https://jocelynrichard.com/
 Description: High legibility, low strain style for long-form reading.
 Fonts: iA Writer Mono, iA Writer Quattro
 Notes:
-	- Typeset on a major third scale
-	- High contrast mode goes beyong color inversion
+  - Typeset on a major third scale
+  - Normalized bottom paddings for vertical rythm (1.5rem for big headings and standalone block elements, 0.75rem for small headings, 0.5rem for baseline text and "inline" block elements
+  - High contrast mode goes beyong color inversion
 ---
 */
 
@@ -178,7 +179,7 @@ blockquote {
 	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
 	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
 	border-radius: 12px;
-	margin: 1.5rem 0;
+	margin: 0.5rem 0;
 	padding: 0.1rem 1rem;
 }
 

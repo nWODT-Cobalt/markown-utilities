@@ -9,10 +9,10 @@ URL: https://jocelynrichard.com/
 Description: Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
 Fonts: Inter, iA Writer Mono
 Notes:
-	- Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
-	- H1/H2 have tight leading, with significant top-padding
-	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
-	- Colors from the UXA style guide
+  - Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
+  - H1/H2 have tight leading, with significant top-padding
+  - H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
+  - Colors from the UXA style guide
 ---
 */
 

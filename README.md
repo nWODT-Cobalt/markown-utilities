@@ -29,7 +29,7 @@ High legibility, low strain style for long-form reading. Supports high contrast 
 Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Supports high contrast mode. Fonts: [Inter](https://rsms.me/inter/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), both free.  
 ![](previews/uxasf1.png)
 
-Older stylesheets, not updated since 2015 ↓
+*Older stylesheets, not updated since 2015 ↓*
 
 **Godspeed** (with free [Source Sans](https://fonts.google.com/specimen/Source+Sans+Pro) and paid [Brush Up Too](https://www.myfonts.com/fonts/pintassilgo/brush-up/too/))  
 ![](previews/godspeed.png)
