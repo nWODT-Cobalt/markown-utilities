@@ -9,7 +9,7 @@ URL: https://jocelynrichard.com/
 Description: High legibility, low strain style for long-form reading.
 Fonts: iA Writer Mono, iA Writer Quattro
 Notes:
-	- Typesetting follows a major third scale
+	- Typeset on a major third scale
 	- High contrast mode goes beyong color inversion
 ---
 */
@@ -40,7 +40,7 @@ html {
 }
 
 body {
-	background-color: hsla(0, 0%, 99%, 1);
+	background-color: hsla(0, 0%, 99%, 1); /* #FCFCFC */
 	color: hsla(0, 0%, 13%, 1); /* #222222 */
 }
 
@@ -52,32 +52,32 @@ h1 {
 	font-size: 3.052rem;
 	font-weight: 800;
 	line-height: 1.2;
-	margin: 2rem 0 1.45rem 0;
+	margin: 5rem 0 1.5rem 0;
 }
 
 h2 {
 	font-size: 2.441rem;
 	font-weight: 800;
 	line-height: 1.2;
-	margin: 1.5rem 0 1.45rem 0;
+	margin: 3.5rem 0 1.5rem 0;
 }
 
 h3 {
 	font-size: 1.953rem;
 	line-height: 1.2;
-	margin: 1.5rem 0 1.45rem 0;
+	margin: 2rem 0 1.5rem 0;
 }
 
 h4 {
 	font-size: 1.563rem;
 	line-height: 1.2;
-	margin: 1rem 0 1rem 0;
+	margin: 1rem 0 0.75rem 0;
 }
 
 h5 {
 	font-size: 1.25rem;
 	line-height: 1.2;
-	margin: 1rem 0 1rem 0;
+	margin: 1rem 0 0.75rem 0;
 }
 
 h6 {
@@ -85,7 +85,7 @@ h6 {
 	font-weight: 800;
 	line-height: 1.5;
 	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
-	margin: 1rem 0 1rem 0;
+	margin: 1rem 0 0.75rem 0;
 }
 
 p,
@@ -95,12 +95,7 @@ dl,
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.75;
-	margin: 0.75rem 0;
-}
-
-p + p {
-	border:1px dashed transparent; /*cross browser transparent border*/
-	margin-top: 0rem;
+	margin: 0.5rem 0;
 }
 
 dt {
@@ -120,13 +115,6 @@ dd {
 #wrapper ol {
 	list-style-position: outside;
 	list-style-type: none;
-}
-
-#wrapper ul {
-}
-
-#wrapper li::marker {
-	
 }
 
 #wrapper ol {
@@ -158,7 +146,7 @@ dd {
 }
 
 #wrapper a:link {
-	color: #0059BF;
+	color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
 	font-weight: 400;
 	text-decoration: none;
 	border-bottom: 2px solid hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
@@ -174,8 +162,8 @@ dd {
 } 
 
 #wrapper a:visited {
-	color: #402CCB;
-	border-color: hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
+	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
+	border-color: hsla(252, 94%, 65%, 0.2); /* Mauve 0483 #7552FA */
 }
 
 #wrapper a:focus {
@@ -190,7 +178,7 @@ blockquote {
 	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
 	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
 	border-radius: 12px;
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 	padding: 0.1rem 1rem;
 }
 
@@ -206,7 +194,7 @@ code {
 pre {
 	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
 	border-radius: 12px;
-	margin-bottom: 0.75rem;
+	margin: 1.5rem 0;
 	padding: 0.5rem;
 }
 
@@ -221,20 +209,16 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	margin: 1.5rem 0;
+}
+
 table {
 	font-family: 'iA Writer Mono V', monospace;
 	font-size: 0.85rem;
-	margin: 0 0 1.5rem 0;
+	margin: 1.5rem 0;
 	border-collapse: collapse;
 	border: none;
-}
-
-tr {
-	border-bottom: 1px solid hsla(0, 0%, 13%, 0.1); /* #222222 */	
-}
-
-tr:last-child {
-	border-bottom: none;
 }
 
 th,
@@ -245,6 +229,14 @@ td {
 th {
 	font-weight: 600;
 	border-bottom: 2px solid hsla(0, 0%, 13%, 1); /* #222222 */
+}
+
+tr {
+	border-bottom: 1px solid hsla(0, 0%, 13%, 0.1); /* #222222 */	
+}
+
+tr:last-child {
+	border-bottom: none;
 }
 
 caption,
@@ -261,6 +253,7 @@ figcaption,
 
 #wrapper .footnotes p { /* Hacky; surely could be done otherwise */
 	display: inline;
+	margin-left: 0;
 }
 
 #wrapper .footnotes ol > li:before { /* Hacky; surely could be done otherwise */
@@ -279,14 +272,13 @@ figcaption,
 hr {
 	width: 100%;
 	border-top: 2px solid hsla(0, 0%, 13%, 0.2); /* #222222 */
-	margin: 3rem auto;
+	margin: 5rem auto;
 	clear: none;
 }
 
-
 ::selection {
-	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
 	background-color: hsla(252, 94%, 65%, 0.1); /* Mauve 0483 #7552FA */
+	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
 }
 
 #firstdiff::before { /* Marked edit marker */
@@ -335,7 +327,16 @@ a {
 	.inverted,
 	.inverted #wrapper {
 		background-color: hsla(0, 0%, 13%, 1); /* #222222 */
-		color: #FCFCFC;
+		color: hsla(0, 0%, 99%, 1); /* FCFCFC */
+	}
+	
+	.inverted h6 {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
+	}
+
+	.inverted #wrapper ul > li:before,
+	.inverted #wrapper ol > li:before {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
 	}
 
 	.inverted #wrapper a:link {
@@ -344,66 +345,64 @@ a {
 	}
 
 	.inverted #wrapper a:hover {
-		border-color: #C4F244;
-		color: #C4F244;
+		border-color: hsla(175, 81%, 60%, 1); /* Vert 046 #48ECDD */
+		color: hsla(175, 81%, 60%, 1); /* Vert 046 #48ECDD */
 	}
 	
 	.inverted #wrapper a:active {
-		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
+		border-color: #FFFFFF;
+		color: #FFFFFF;
 	}
 	
 	.inverted #wrapper a:visited {
-		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */
+		border-color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
+		color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
 	}
 
 	.inverted blockquote {
-		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
 	}
 	
 	.inverted code {
-		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
 	}
 	
 	.inverted pre {
-		background-color: hsla(0, 0%, 97%, 0.1); /* Gris 0106 Béton Clair #F8F8F8 */
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
 	}
 	
 	.inverted pre code {
 		background-color: transparent;
 	}
 
-	.inverted table,
-	.inverted th,
-	.inverted td {
-		border-color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */;	
+	.inverted th {
+		border-color: hsla(0, 0%, 99%, 1); /* FCFCFC */
+	}
+
+	.inverted tr {
+		border-color: hsla(0, 0%, 99%, 0.4); /* FCFCFC */
 	}
 
 	.inverted caption,
 	.inverted figcaption,
-	.inverted .footnotes ol li,
-	.inverted .footnotes p,
-	.inverted #wrapper a.footnote {
-		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
-	}
-
-	.inverted #wrapper a:hover.footnote {
-		color: #C4F244;
+	.inverted #wrapper .footnotes ol li,
+	.inverted #wrapper .footnotes p {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */	
 	}
 
 	.inverted hr {
-		border-color: hsla(0, 0%, 99%, 1);
+		border-color: hsla(0, 0%, 99%, 1); /* FCFCFC */
 	}
 	
-	::selection {
-		color: hsla(252, 100%, 76%, 1); /* Mauve 0483 #7552FA */
-		background-color: hsla(252, 100%, 76%, 0.1); /* Mauve 0483 #7552FA */
+	.inverted ::selection {
+		background-color: hsla(252, 100%, 76%, 0.1);
+		color: hsla(252, 100%, 76%, 1);
 	}
 	
-	#firstdiff::before { /* Marked edit marker */
-		color: hsla(202, 100%, 71%, 1);
+	.inverted #firstdiff::before { /* Marked edit marker */
+		color: hsla(202, 100%, 71%, 1) !important;
 	}
 
 	.inverted #wrapper .mkstyledtag { /* Marked tags */

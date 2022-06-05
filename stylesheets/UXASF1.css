@@ -358,8 +358,8 @@ a {
 
 	.inverted caption,
 	.inverted figcaption,
-	.inverted .footnotes ol li,
-	.inverted .footnotes p,
+	.inverted #wrapper .footnotes ol li,
+	.inverted #wrapper .footnotes p,
 	.inverted #wrapper a.footnote {
 		color: hsla(0, 0%, 97%, 0.6); /* Gris 0106 Béton Clair #F8F8F8 */
 	}
