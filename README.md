@@ -21,9 +21,13 @@ The stylesheets haven't been tested in other tools. However they're generic CSS 
 
 ### Gallery
 
+**Tetra**  
+High legibility, low strain style for long-form reading. Supports high contrast mode. Fonts: [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro), both free.
+![previews/tetra.png](previews/tetra.png)
+
 **UXASF1**  
-Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Supports high contrast mode . Fonts: [Inter](https://rsms.me/inter/) and [iA Writer Duo](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Duo), both free.  
-![](previews/UXASF1.png)
+Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa). Supports high contrast mode. Fonts: [Inter](https://rsms.me/inter/) and [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), both free.  
+![](previews/uxasf1.png)
 
 Older stylesheets, not updated since 2015 ↓
 

@@ -3,16 +3,14 @@ This document has been created with Marked.app <https://marked2app.com>
 Content is property of the document author
 Please leave this notice in place, along with any additional credits below.
 ---------------------------------------------------------------
-Title: UXASF1
+Title: Tetra
 Author: Jocelyn Richard
 URL: https://jocelynrichard.com/
-Description: Run-of-the-mill sans-serif style, with big text baseline and even bigger titles. Used to render UXA documents.
-Fonts: Inter, iA Writer Mono
+Description: High legibility, low strain style for long-form reading.
+Fonts: iA Writer Mono, iA Writer Quattro
 Notes:
-	- Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
-	- H1/H2 have tight leading, with significant top-padding
-	- H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
-	- Colors from the UXA style guide
+	- Typesetting follows a major third scale
+	- High contrast mode goes beyong color inversion
 ---
 */
 
@@ -42,52 +40,52 @@ html {
 }
 
 body {
-	background-color: #F8F8F8;
-	color: #232323;
+	background-color: hsla(0, 0%, 99%, 1);
+	color: hsla(0, 0%, 13%, 1); /* #222222 */
 }
 
 #wrapper {
-	font-family: 'Inter', sans-serif;
+	font-family: 'iA Writer Quattro V', sans-serif;
 }
 
 h1 {
-	font-size: 5rem;
-	font-weight: 900;
-	line-height: 1.05;
-	margin: 3rem 0 1.5rem 0;
+	font-size: 3.052rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 2rem 0 1.45rem 0;
 }
 
 h2 {
-	font-size: 1.99rem;
+	font-size: 2.441rem;
 	font-weight: 800;
-	line-height: 1.05;
-	margin: 3rem 0 1.5rem 0;
+	line-height: 1.2;
+	margin: 1.5rem 0 1.45rem 0;
 }
 
 h3 {
-	font-size: 1.41rem;
+	font-size: 1.953rem;
 	line-height: 1.2;
-	margin: 1.5rem 0 1.25rem 0;
+	margin: 1.5rem 0 1.45rem 0;
 }
 
 h4 {
-	font-size: 1rem;
+	font-size: 1.563rem;
 	line-height: 1.2;
-	margin: 1.5rem 0 1.25rem 0;
+	margin: 1rem 0 1rem 0;
 }
 
 h5 {
-	font-size: 0.7rem;
-	line-height: 1.75;
-	text-transform: uppercase;
-	margin: 1.5rem 0 1.25rem 0;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 1rem 0 1rem 0;
 }
 
 h6 {
-	font-size: 0.7rem;
-	line-height: 1.75;
-	text-transform: uppercase;
-	margin: 1.5rem 0 1.25rem 1.5rem;
+	font-size: 1rem;
+	font-weight: 800;
+	line-height: 1.5;
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin: 1rem 0 1rem 0;
 }
 
 p,
@@ -100,6 +98,11 @@ dl,
 	margin: 0.75rem 0;
 }
 
+p + p {
+	border:1px dashed transparent; /*cross browser transparent border*/
+	margin-top: 0rem;
+}
+
 dt {
 	font-size: 1rem;
 	font-weight: 600;
@@ -110,25 +113,41 @@ dd {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.75;
-	margin: 0 0 0.75rem 0;
+	margin: 0 0 0.5rem 0;
+}
+
+#wrapper ul,
+#wrapper ol {
+	list-style-position: outside;
+	list-style-type: none;
 }
 
 #wrapper ul {
-	list-style: none;
-	list-style-position: outside;
 }
 
-#wrapper ul > li {
-	text-indent: -1rem;
+#wrapper li::marker {
+	
 }
 
-#wrapper ul > li::before {
-	content: "–";
-	padding-right: 0.5rem;
+#wrapper ol {
+	counter-reset: compteur 0;
 }
 
 #wrapper ol > li {
-	text-indent: 0; /* pourkwaaaaaaa */
+	counter-increment: compteur;
+	padding: 0;
+}
+
+#wrapper ul > li:before {
+	content: "–";
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin-right: 1rem;
+}
+
+#wrapper ol > li:before {
+	content: counter(compteur) ".";
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin-right: 0.5rem;
 }
 
 #wrapper ul ul,
@@ -139,59 +158,60 @@ dd {
 }
 
 #wrapper a:link {
-	color: #0117E6;
-	font-weight: 600;
+	color: #0059BF;
+	font-weight: 400;
 	text-decoration: none;
-	border-bottom: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
+	border-bottom: 2px solid hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
 }
 
 #wrapper a:hover {
-	color: #0117E6;
-	border-bottom: 2px solid #0117E6;
-	padding-bottom: 1px;
+	border-color: #0059BF;
 }
 
 #wrapper a:active {
-	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
-}
+	color: #0081C0;
+	border-color: #0081C0;
+} 
 
 #wrapper a:visited {
-	color: #232323;
-	border-bottom: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
+	color: #402CCB;
+	border-color: hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
 }
 
 #wrapper a:focus {
 	outline: none;
-	box-shadow: 0 0 0 4px #FF6C03;
+	box-shadow: 0 0 0 4px #0059BF;
 	border-radius: 1px;
 	padding: 2px;
 }
 
 blockquote {
-	font-style: normal;
-	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
-	margin: 1rem 0 1rem 2rem; /* 1rem vertical margin to account for the border's visual hoverang */
-	padding-left: 1rem;
-	border-left: 4px solid hsla(0, 0%, 14%, 0.15); /* Noir 1571 Jais #232323 */
+	font-style: italic;
+	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
+	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
+	border-radius: 12px;
+	margin: 1rem 0;
+	padding: 0.1rem 1rem;
 }
 
 code {
 	font-family: 'iA Writer Mono V', monospace;
-	font-size: 90%;
-	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
-	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
-	border-radius: 0;
+	font-size: 100%;
+	background-color: hsla(0, 0%, 13%, 0.05); /* #222222 */
+	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
+	border-radius: 4px;
 	padding: 2px 4px;
 }
 
 pre {
-	background-color: hsla(0, 0%, 14%, 0.05); /* Noir 1571 Jais #232323 */
-	border-radius: 0;
+	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
+	border-radius: 12px;
 	margin-bottom: 0.75rem;
 	padding: 0.5rem;
 }
 
 pre code {
+	font-size: 0.85rem;
 	background-color: transparent;
 	padding: 0;
 }
@@ -206,12 +226,15 @@ table {
 	font-size: 0.85rem;
 	margin: 0 0 1.5rem 0;
 	border-collapse: collapse;
+	border: none;
 }
 
-table,
-th,
-td {
-	border: 1px solid hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */	
+tr {
+	border-bottom: 1px solid hsla(0, 0%, 13%, 0.1); /* #222222 */	
+}
+
+tr:last-child {
+	border-bottom: none;
 }
 
 th,
@@ -219,58 +242,60 @@ td {
 	padding: 0.5rem;
 }
 
+th {
+	font-weight: 600;
+	border-bottom: 2px solid hsla(0, 0%, 13%, 1); /* #222222 */
+}
+
 caption,
 figcaption,
 #wrapper .footnotes ol li,
 #wrapper .footnotes p {
-	font-family: 'Inter', sans-serif;
 	font-size: 0.85rem;
-	line-height: 1.5rem;
+	font-style: italic;
+	line-height: 1.75;
 	text-align: left;
-	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */
+	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
 	margin: 0;
 }
 
+#wrapper .footnotes p { /* Hacky; surely could be done otherwise */
+	display: inline;
+}
+
+#wrapper .footnotes ol > li:before { /* Hacky; surely could be done otherwise */
+	margin-right: 0;
+}
+
 #wrapper a.footnote {
-	font-size: 0.75rem;
-	font-weight: 600;
-	line-height: 0;
-	color: hsla(0, 0%, 14%, 0.7); /* Noir 1571 Jais #232323 */;
-	border: 0;
-	height: 0;
-	padding-left: 0.125rem;
+	font-size: 0.85rem;
+	font-weight: 500;
+	margin-left: 0.25rem;
+	padding-bottom: 0.125rem;
 	position: relative;
-	vertical-align: super;
-}
-
-#wrapper a:hover.footnote {
-	color: #0117E6;
-}
-
-#wrapper a:link.reversefootnote,
-#wrapper a:visited.reversefootnote  {
-	border-bottom-width: 2px;
+	top: -0.025rem;
 }
 
 hr {
 	width: 100%;
-	border-top: 1px solid hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */	
+	border-top: 2px solid hsla(0, 0%, 13%, 0.2); /* #222222 */
 	margin: 3rem auto;
 	clear: none;
 }
 
+
 ::selection {
-	color: #FF6C03;
-	background-color: hsla(25, 100%, 51%, 0.1); /* Orange 0283 Brûlé #FF6C03 */
+	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
+	background-color: hsla(252, 94%, 65%, 0.1); /* Mauve 0483 #7552FA */
 }
 
 #firstdiff::before { /* Marked edit marker */
-	color: #FF6C03 !important;
+	color: hsla(212, 100%, 37%, 1) !important; /* Bleu 0660 Atténué #0059BF */
 }
 
 #wrapper .mkstyledtag { /* Marked tags */
-	background-color: hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */
-	color: #F8F8F8;
+	background-color: hsla(212, 100%, 37%, 0.1); /* Bleu 0660 Atténué #0059BF */
+	color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
 	border-radius: 999px;
 	padding: 0.3rem 0.75rem !important;
 }
@@ -309,13 +334,13 @@ a {
 
 	.inverted,
 	.inverted #wrapper {
-		background-color: #232323;
-		color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */
+		background-color: hsla(0, 0%, 13%, 1); /* #222222 */
+		color: #FCFCFC;
 	}
 
 	.inverted #wrapper a:link {
-		border-color: hsla(0, 0%, 97%, 0.5); /* Gris 0106 Béton Clair #F8F8F8 */
-		color: #C4F244;
+		color: hsla(202, 100%, 71%, 1);
+		border-color: hsla(202, 100%, 71%, 1);
 	}
 
 	.inverted #wrapper a:hover {
@@ -369,12 +394,22 @@ a {
 	}
 
 	.inverted hr {
-		border-color: hsla(0, 0%, 97%, 1); /* Gris 0106 Béton Clair #F8F8F8 */;	
+		border-color: hsla(0, 0%, 99%, 1);
+	}
+	
+	::selection {
+		color: hsla(252, 100%, 76%, 1); /* Mauve 0483 #7552FA */
+		background-color: hsla(252, 100%, 76%, 0.1); /* Mauve 0483 #7552FA */
+	}
+	
+	#firstdiff::before { /* Marked edit marker */
+		color: hsla(202, 100%, 71%, 1);
 	}
 
 	.inverted #wrapper .mkstyledtag { /* Marked tags */
-		background-color: #F8F8F8;
-		color: hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */
+		background-color: transparent;
+		color: hsla(202, 100%, 71%, 1);
+		border: 2px solid hsla(202, 100%, 71%, 1);
 	}
 
 }
