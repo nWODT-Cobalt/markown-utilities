@@ -133,16 +133,25 @@ dd {
 	margin-right: 1rem;
 }
 
-#wrapper ul > li,
-#wrapper ol > li {
-  text-indent: -1.5rem;
-  padding-left: 1.75rem;
-}
-
 #wrapper ol > li:before {
 	content: counter(compteur) ".";
 	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
 	margin-right: 0.5rem;
+}
+
+#wrapper ul > li,
+#wrapper ol > li {
+  text-indent: -1.7rem;
+  padding-left: 1.75rem;
+}
+
+#wrapper li p {
+  text-indent: 0;
+}
+
+#wrapper ul p:first-of-type,
+#wrapper ol p:first-of-type {
+  display: inline;
 }
 
 #wrapper ul ul,
@@ -182,11 +191,9 @@ dd {
 
 blockquote {
 	font-style: italic;
-	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
-	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
-	border-radius: 12px;
-	margin: 0.5rem 0;
-	padding: 0.1rem 1rem;
+	margin: 1.5rem 0;
+	padding-left: 1rem;
+	border-left: 2px solid hsla(0, 0%, 13%, 0.2); /* #222222 */
 }
 
 code {
