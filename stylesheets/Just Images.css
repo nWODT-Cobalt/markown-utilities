@@ -1,0 +1,99 @@
+/*
+This document has been created with Marked.app <https://marked2app.com>
+Content is property of the document author
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: Just Images
+Author: Jocelyn Richard
+URL: https://jocelynrichard.com/
+Description: Hides everything but images; for reference or print. Idea from Sid O'Neill.
+---
+*/
+
+/* ------------------------------ */
+/* Reset */
+/* ------------------------------ */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code, dl, dt, dd, sup, sub,
+#wrapper ol, #wrapper ul, #wrapper li,
+img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* ------------------------------ */
+/* Styles */
+/* ------------------------------ */
+
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #222222;
+}
+
+h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code, dl, dt, dd, sup, sub,
+#wrapper ol, #wrapper ul, #wrapper li,
+table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	display: none;
+}
+
+figure {
+	margin: 4rem auto;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figcaption {
+	font-family: ui-serif, serif;
+	font-style: italic;
+	line-height: 1.75;
+	text-align: left;
+}
+
+/* ------------------------------ */
+/* Inverted */
+/* ------------------------------ */
+
+@media screen {
+
+	.inverted,
+	.inverted #wrapper {
+		background-color: #222222;
+		color: #FFFFFF;
+	}
+	
+}
+
+/* ------------------------------ */
+/* Print */
+/* ------------------------------ */
+
+@media print {
+	
+	html {
+		 color: #000000 !important; /* Black prints faster */
+	}
+	
+	#wrapper {
+		padding-bottom: 0 !important;
+	}
+	
+	img,
+	figure {
+		page-break-inside: avoid;
+	}
+
+}

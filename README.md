@@ -4,8 +4,7 @@ Tools for editing, rendering and exporting Markdown files.
 
 ## Markdown Setup
 
-On Mac: [Atom](https://atom.io/) for editing,  [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.
-
+On Mac: [Atom](https://atom.io/) for editing,  [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
 On iOS/Android: [iA Writer](https://ia.net/writer).
 
 Atom packages, not required but convenient:
@@ -18,7 +17,7 @@ Atom packages, not required but convenient:
 
 ## Stylesheets
 
-Adding stylesheets to Marked: `Marked 2` → `Preferences` → `Style`.
+Can be added to Marked through `Preferences` → `Style`.
 
 <!-- The stylesheets haven't been tested in other tools. However they're generic CSS and could be reused elsewhere, provided the Marked-specific `#wrapper` selectors are removed. -->
 
@@ -39,6 +38,16 @@ Adding stylesheets to Marked: `Marked 2` → `Preferences` → `Style`.
 
 ![](previews/uxasf1.png)
 
+### Just Images
+
+- Hides everything but images; for reference or print
+- High contrast mode support
+
+### Just Tables
+
+- Hides everything but tables; for reference or print
+- High contrast mode support
+
 ### Older Stylesheets
 
 - Not updated since 2015
@@ -54,6 +63,6 @@ Adding stylesheets to Marked: `Marked 2` → `Preferences` → `Style`.
 Sample documents for development and testing.
 
 - `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
-- `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first half prints tags for completeness check, the second one prints long form text for typographic rythm check.
+- `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first part prints tags for completeness check, the second one prints long form text for typographic rythm check.
 
 Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
