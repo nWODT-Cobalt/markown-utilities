@@ -13,6 +13,7 @@ Notes:
   - H1/H2 have tight leading, with significant top-padding
   - H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
   - Colors from the UXA style guide
+  - Print style is optimized for PDF export, not paper printing
 ---
 */
 
@@ -48,6 +49,7 @@ body {
 
 #wrapper {
 	font-family: 'Inter', sans-serif;
+	padding-bottom: 9rem !important; /* Purely subjective */
 }
 
 h1 {
@@ -127,8 +129,14 @@ dd {
 	padding-right: 0.5rem;
 }
 
-#wrapper ol > li {
-	text-indent: 0; /* pourkwaaaaaaa */
+#wrapper ol > li, /* pourkwaaaaaaa */
+#wrapper ul p  { /* For complex lists whose li include a p when processed by Marked */
+	text-indent: 0; 
+}
+
+#wrapper ul p:first-of-type,
+#wrapper ol p:first-of-type { /* For complex lists whose li include a p when processed by Marked */
+  display: inline;
 }
 
 #wrapper ul ul,
@@ -253,9 +261,9 @@ figcaption,
 }
 
 hr {
-	width: 100%;
+	width: 10rem;
 	border-top: 1px solid hsla(0, 0%, 14%, 1); /* Noir 1571 Jais #232323 */	
-	margin: 3rem auto;
+	margin: 3rem auto 3rem 0;
 	clear: none;
 }
 
@@ -396,6 +404,10 @@ a {
 /* ------------------------------ */
 
 @media print {
+	
+	#wrapper {
+		padding-bottom: 0 !important;
+	}
 
 	#wrapper ul,
 	#wrapper ol {

@@ -47,6 +47,7 @@ body {
 
 #wrapper {
 	font-family: 'iA Writer Quattro V', sans-serif;
+	padding-bottom: 9rem !important; /* Purely subjective */
 }
 
 h1 {
@@ -145,12 +146,12 @@ dd {
   padding-left: 1.75rem;
 }
 
-#wrapper li p {
+#wrapper li p { /* For complex lists whose li include a p when processed by Marked */
   text-indent: 0;
 }
 
 #wrapper ul p:first-of-type,
-#wrapper ol p:first-of-type {
+#wrapper ol p:first-of-type { /* For complex lists whose li include a p when processed by Marked */
   display: inline;
 }
 
@@ -306,7 +307,7 @@ hr {
 }
 
 #firstdiff::before { /* Marked edit marker */
-	color: hsla(212, 100%, 37%, 1) !important; /* Bleu 0660 Atténué #0059BF */
+	color: hsla(252, 94%, 65%, 1) !important; /* Mauve 0483 #7552FA */
 }
 
 #wrapper .mkstyledtag { /* Marked tags */
@@ -426,7 +427,7 @@ a {
 	}
 	
 	.inverted #firstdiff::before { /* Marked edit marker */
-		color: hsla(202, 100%, 71%, 1) !important;
+		color: hsla(252, 100%, 76%, 1) !important;
 	}
 
 	.inverted #wrapper .mkstyledtag { /* Marked tags */
@@ -454,6 +455,20 @@ a {
 /* ------------------------------ */
 
 @media print {
+
+	html {
+		 color: #000000 !important; /* Black prints faster */
+	}
+	
+	#wrapper {
+		padding-bottom: 0 !important;
+	}
+		
+	#wrapper a:link {
+		color: #000000;
+		text-decoration: underline;
+		border-bottom: none;
+	}
 
 	#wrapper ul,
 	#wrapper ol {
