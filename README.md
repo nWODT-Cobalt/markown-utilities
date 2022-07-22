@@ -7,7 +7,7 @@ Tools for editing, rendering and exporting Markdown files.
 On Mac: [Atom](https://atom.io/) for editing,  [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
 On iOS/Android: [iA Writer](https://ia.net/writer).
 
-Atom packages, not required but convenient:
+Atom is well-suited to Markdown out of the box, but a couple extra packages make it more convenient:
 
 - [document-outline](https://atom.io/packages/document-outline)
 - [folding-markdown](https://atom.io/packages/folding-markdown)

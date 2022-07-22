@@ -10,7 +10,7 @@ Description: High legibility, low strain style for long-form reading.
 Fonts: iA Writer Mono, iA Writer Quattro
 Notes:
   - Typeset on a major third scale
-  - Normalized bottom paddings for vertical rythm (1.5rem for big headings and standalone block elements, 0.75rem for small headings, 0.5rem for baseline text and "inline" block elements
+  - Normalized bottom paddings for vertical rythm (1.5 rem for big headings and standalone block elements, 0.75 rem for small headings, 0.5 rem for baseline text and "inline" block elements
   - Good print support
   - High contrast mode does several tricks to improve legibility, beyond color inversion 
 ---
@@ -74,7 +74,7 @@ h3 {
 h4 {
 	font-size: 1.563rem;
 	line-height: 1.2;
-	margin: 1rem 0 0.75rem 0;
+	margin: 1.5rem 0 1.5rem 0;
 }
 
 h5 {
@@ -85,7 +85,6 @@ h5 {
 
 h6 {
 	font-size: 1rem;
-	font-weight: 800;
 	line-height: 1.5;
 	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
 	margin: 1rem 0 0.75rem 0;
@@ -165,7 +164,6 @@ dd {
 
 #wrapper a:link {
 	color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
-	font-weight: 400;
 	text-decoration: none;
 	border-bottom: 2px solid hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
 }
