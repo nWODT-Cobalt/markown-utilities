@@ -19,7 +19,15 @@ Atom is well-suited to Markdown out of the box, but a couple extra packages make
 
 Can be added to Marked through `Preferences` → `Style`.
 
-<!-- The stylesheets haven't been tested in other tools. However they're generic CSS and could be reused elsewhere, provided the Marked-specific `#wrapper` selectors are removed. -->
+<!-- The stylesheets haven’t been tested in other tools. However they’re generic CSS and could be reused elsewhere, provided the Marked-specific `#wrapper` selectors are removed. -->
+
+### Chromatophore 1-2
+
+- Colorful theme for lighter content
+- High contrast mode isn’t higher contrast, but an alternate color scheme
+- Fonts: [Reforma](https://pampatype.com/reforma)
+
+![](previews/chromatophore-1-2.png)
 
 ### Tetra
 
@@ -65,4 +73,15 @@ Sample documents for development and testing.
 - `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
 - `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first part prints tags for completeness check, the second one prints long form text for typographic rythm check.
 
-Previews are processed (e.g. cropped) in a [private Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
+Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
+
+<!--
+## Ideas
+
+- Chromatophore: streamline/harmozine colors, esp in inverted mode. Reforma 2018 for some content? +inverted hr
+- Inria Serif (academic paper style? alinea indents? Gallimard-rubrication style?)
+- Fira Sans (FT style?)
+- Public Sans
+- Neon style (space grotesk or rubik for body? bg gradient, nth paragraph colors, glow or shadow punch-out effects)
+- stream custom fonts from Google?
+-->

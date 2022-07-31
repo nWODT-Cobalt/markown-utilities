@@ -1,0 +1,388 @@
+/*
+This document has been created with Marked.app <https://marked2app.com>
+Content is property of the document author
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: UXASF1
+Author: Jocelyn Richard
+URL: https://jocelynrichard.com/
+Description: Sans-serif style, with big text baseline and even bigger titles; used to render UXA documents.
+Fonts: Inter, iA Writer Mono
+Notes:
+  - Headings follow an augmented fourth scale, with identical top-bottom padding
+  - Colors from https://github.com/nWODT-Cobalt/color-palettes/blob/main/1969.pdf
+---
+*/
+
+/* ------------------------------ */
+/* Reset */
+/* ------------------------------ */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code, dl, dt, dd, sup, sub,
+#wrapper ol, #wrapper ul, #wrapper li,
+img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* ------------------------------ */
+/* Styles */
+/* ------------------------------ */
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: hsla(37, 57%, 93%, 1.00);
+	color: hsla(227, 56%, 41%, 1.00);
+}
+
+#wrapper {
+	font-family: 'Reforma 1918', serif;
+	padding-bottom: 9rem !important; /* Arbitrary */
+}
+
+h1,
+h2,
+h3 {
+	color: hsla(227, 48%, 29%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
+}
+
+h1 {
+	font-size: 3.998rem;
+	line-height: 1.1;
+	margin: 3rem 0;
+}
+
+h2 {
+	font-size: 2.827rem;
+	line-height: 1.1;
+	margin: 3rem 0;
+}
+
+h3 {
+	font-size: 1.99rem;
+	line-height: 1.2;
+	margin: 1.5rem 0;
+}
+
+h4 {
+	font-size: 1.414rem;
+	line-height: 1.2;
+	margin: 1.5rem 0;
+}
+
+h5 {
+	font-size: 0.707rem;
+	line-height: 1.75;
+	text-transform: uppercase;
+	margin: 1.5rem 0;
+}
+
+h6 {
+	font-size: 0.707rem;
+	line-height: 1.75;
+	text-transform: uppercase;
+	margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+p,
+dl,
+#wrapper ol,
+#wrapper ul {
+	font-size: 1.2rem; /* Arbitrary */
+	line-height: 1.5;
+	margin: 1rem 0;
+}
+
+dt {
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.75;
+}
+
+dd {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.75;
+	margin: 0 0 1rem 0;
+}
+
+#wrapper ol > li, /* pourkwaaaaaaa */
+#wrapper ul p  { /* For complex lists whose li include a p when processed by Marked */
+	text-indent: 0; 
+}
+
+#wrapper ul p:first-of-type,
+#wrapper ol p:first-of-type { /* For complex lists whose li include a p when processed by Marked */
+  display: inline;
+}
+
+#wrapper ul ul,
+#wrapper ul ol,
+#wrapper ol ul,
+#wrapper ol ol {
+	margin: 0 0 0 2rem;
+}
+
+#wrapper a:link {
+	color: hsla(227, 56%, 41%, 1.00);
+	font-weight: 400;
+	text-decoration: none;
+	border-bottom: 1px solid hsla(227, 56%, 41%, 1.00);
+}
+
+#wrapper a:hover {
+	color: hsla(227, 48%, 29%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
+	border-color: hsla(227, 48%, 29%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
+}
+
+#wrapper a:active {
+	color: hsla(40, 6%, 10%, 1.00);
+	border-color: hsla(40, 6%, 10%, 1.00);
+}
+
+#wrapper a:visited {
+	color: hsla(227, 56%, 41%, 1.00);
+	border-color: hsla(227, 56%, 41%, 1.00);
+}
+
+#wrapper a:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px hsla(22, 88%, 77%, 1.00);
+	border-radius: 1px;
+	padding: 2px;
+}
+
+blockquote {
+	font-style: italic;
+	color: hsla(4, 93%, 55%, 1.00);
+	margin: 2rem 0;
+	padding: 0 1rem;
+	border: 1px solid hsla(22, 88%, 77%, 1.00);
+}
+
+code {
+	font-family: monospace;
+	font-size: 90%;
+	color: hsla(40, 6%, 10%, 0.8);
+	border-radius: 0;
+}
+
+pre {
+	border: 1px solid hsla(40, 6%, 10%, 0.1);
+	color: hsla(4, 93%, 55%, 1.00);
+	margin: 2rem 0;
+	padding: 1rem;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+table {
+	color: hsla(40, 6%, 10%, 0.8);
+	font-family: monospace;
+	font-size: 0.85rem;
+	margin: 0 0 1.5rem 0;
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid hsla(40, 6%, 10%, 0.1);
+}
+
+th,
+td {
+	padding: 0.5rem;
+}
+
+caption,
+figcaption,
+#wrapper .footnotes ol li,
+#wrapper .footnotes p {
+	font-family: 'Reforma 1918', serif;
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+	text-align: left;
+	color: hsla(40, 6%, 10%, 0.8);
+	margin: 0;
+}
+
+#wrapper a.footnote {
+	font-size: 1rem;
+	color: hsla(40, 6%, 10%, 0.8);
+	border: 0;
+	padding-left: 0.25rem;
+
+}
+
+#wrapper a:hover.footnote {
+	color: hsla(227, 48%, 29%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
+}
+
+hr {
+	width: 120px;
+	height: 120px;
+	margin: 3rem auto;
+	background: url('data:image/png;base64,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')
+}
+
+::selection {
+	color: hsla(4, 93%, 55%, 1.00);
+	background-color: hsla(22, 88%, 77%, 0.25);
+}
+
+#firstdiff::before { /* Marked edit marker */
+	color: hsla(4, 93%, 55%, 1.00) !important;
+}
+
+#wrapper .mkstyledtag { /* Marked tags */
+	background-color: transparent;
+	color: hsla(40, 6%, 10%, 1.00);
+	border-bottom: 0.1em solid hsla(40, 6%, 10%, 1.00);
+	border-radius: 0;
+	padding: 0 !important;
+}
+
+h1,
+h2,
+a, /* :link ? */
+pre,
+pre code { /* From https://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+	white-space:      pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space:     -pre-wrap; /* Opera 4-6 */
+	white-space:   -o-pre-wrap;	/* Opera 7 */
+	word-wrap:      break-word; /* Internet Explorer 5.5+ */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote { /* Transitioning p elements might cause duplication bugs when printing. Somehow can't be mitigated by print styles. */
+	transition: all 0.2s ease;
+}
+
+a {
+	transition: all 0.1s ease-in-out;
+}
+
+/* ------------------------------ */
+/* Inverted */
+/* ------------------------------ */
+
+@media screen {
+
+	.inverted,
+	.inverted #wrapper {
+		background-color: hsla(146, 31%, 82%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
+		color: hsla(173, 90%, 12%, 1.00);
+	}
+	
+	.inverted h1,
+	.inverted h2,
+	.inverted h3 {
+		color: hsla(173, 90%, 12%, 1.00);
+	}
+
+	.inverted #wrapper a:link {
+		border-color: hsla(173, 90%, 12%, 1.00);
+		color: hsla(173, 90%, 12%, 1.00);
+	}
+
+	.inverted #wrapper a:hover {
+		border-color: hsla(40, 6%, 10%, 1.00);
+		color: hsla(40, 6%, 10%, 1.00);
+	}
+	
+	.inverted #wrapper a:visited {
+		border-color: hsla(173, 90%, 12%, 1.00);
+		color: hsla(173, 90%, 12%, 1.00);
+	}
+
+	.inverted blockquote {
+		border-color: hsla(101, 8%, 60%, 1.00);
+		color: hsla(25, 52%, 24%, 1.00);
+	}
+	
+	.inverted code {
+		color: hsla(25, 52%, 24%, 1.00);
+	}
+
+	.inverted table,
+	.inverted th,
+	.inverted td {
+		border-color: hsla(101, 8%, 60%, 1.00);
+	}
+
+	.inverted caption,
+	.inverted figcaption,
+	.inverted #wrapper .footnotes ol li,
+	.inverted #wrapper .footnotes p,
+	.inverted #wrapper a.footnote {
+		color: hsla(25, 52%, 24%, 1.00);
+	}
+
+	.inverted #wrapper a:hover.footnote {
+		color: hsla(40, 6%, 10%, 1.00);
+	}
+
+}
+
+/* ------------------------------ */
+/* Responsiveness */
+/* ------------------------------ */
+
+@media screen and (min-width: 961px) {
+	
+	html {
+		font-size: 20px;
+	}
+	
+}
+
+/* ------------------------------ */
+/* Print */
+/* ------------------------------ */
+
+@media print {
+	
+	#wrapper {
+		padding-bottom: 0 !important;
+	}
+
+	#wrapper ul,
+	#wrapper ol {
+		margin-left: 0;
+		list-style-position: inside;
+	}
+
+	#wrapper ul > li,
+	#wrapper ol > li {
+		text-indent: 0;
+	}
+	
+	img,
+	pre,
+	blockquote,
+	table,
+	figure,
+	p {
+		page-break-inside: avoid;
+	}
+
+}
