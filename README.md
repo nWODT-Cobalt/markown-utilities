@@ -24,7 +24,7 @@ Can be added to Marked through `Preferences` → `Style`.
 ### Chromatophore 1-2
 
 - Colorful theme for lighter content
-- High contrast mode isn’t higher contrast, but an alternate color scheme
+- High contrast mode isn’t actually higher contrast, but an alternate color scheme
 - Fonts: [Reforma](https://pampatype.com/reforma)
 
 ![](previews/chromatophore-1-2.png)
@@ -73,13 +73,13 @@ Sample documents for development and testing.
 - `Short Specimen`: sample document of common Markdown tags; used to make the previews for this readme
 - `Long Specimen`: sample document of almost all MultiMarkdown tags, for more exhaustive work. The first part prints tags for completeness check, the second one prints long form text for typographic rythm check.
 
-Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/Markdown-Utilities).
+Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/GitHub?node-id=0%3A1).
 
 <!--
 ## Ideas
 
 - Chromatophore: streamline/harmozine colors, esp in inverted mode. Reforma 2018 for some content? +inverted hr
-- Inria Serif (academic paper style? alinea indents? Gallimard-rubrication style?)
+- Inria Serif (academic paper style? alinea indents? Gallimard-rubrication style? link in the style of "Atlas des Îles Abandonnées")
 - Fira Sans (FT style?)
 - Public Sans
 - Neon style (space grotesk or rubik for body? bg gradient, nth paragraph colors, glow or shadow punch-out effects)
