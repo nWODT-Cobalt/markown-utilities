@@ -6,12 +6,14 @@ Please leave this notice in place, along with any additional credits below.
 Title: Tetra
 Author: Jocelyn Richard
 URL: https://jocelynrichard.com/
-Description: High legibility, low strain style for long-form reading.
-Fonts: iA Writer Mono, iA Writer Quattro
+Description:
+  - High legibility, low strain style for long-form reading
+  - Good print support
+  - High contrast mode support
+  - Fonts: [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Quattro](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
 Notes:
   - Typeset on a major third scale
   - Normalized bottom paddings for vertical rythm (1.5 rem for big headings and standalone block elements, 0.75 rem for small headings, 0.5 rem for baseline text and "inline" block elements
-  - Good print support
   - High contrast mode does several tricks to improve legibility, beyond color inversion 
 ---
 */

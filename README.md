@@ -4,7 +4,7 @@ Tools for editing, rendering and exporting Markdown files.
 
 ## Markdown Setup
 
-On Mac: [Atom](https://atom.io/) for editing,  [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
+On Mac: [Atom](https://atom.io/) for editing, [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
 On iOS/Android: [iA Writer](https://ia.net/writer).
 
 Atom is well-suited to Markdown out of the box, but a couple extra packages make it more convenient:
@@ -17,7 +17,7 @@ Atom is well-suited to Markdown out of the box, but a couple extra packages make
 
 ## Stylesheets
 
-Can be added to Marked through `Preferences` → `Style`.
+Can be added to Marked through `Preferences`/`Style`.
 
 <!-- The stylesheets haven’t been tested in other tools. However they’re generic CSS and could be reused elsewhere, provided the Marked-specific `#wrapper` selectors are removed. -->
 
@@ -59,9 +59,9 @@ Can be added to Marked through `Preferences` → `Style`.
 ### Older Stylesheets
 
 - Not updated since 2015
-- Godspeed (fonts: [Source Sans](https://fonts.google.com/specimen/Source+Sans+Pro), [Brush Up Too](https://www.myfonts.com/fonts/pintassilgo/brush-up/too/), paid)
+- Godspeed (fonts: [Source Sans](https://fonts.google.com/specimen/Source+Sans+Pro), [Brush Up Too](https://www.myfonts.com/fonts/pintassilgo/brush-up/too/), $)
 - New Modern (fonts: [Open Sans](https://fonts.google.com/specimen/Open+Sans))
-- Torpedo (fonts: [Open Sans](https://fonts.google.com/specimen/Open+Sans), [Cinta](https://www.myfonts.com/fonts/tipo-pepel/cinta/), paid)
+- Torpedo (fonts: [Open Sans](https://fonts.google.com/specimen/Open+Sans), [Cinta](https://www.myfonts.com/fonts/tipo-pepel/cinta/), $)
 - Vostok (fonts: [PT Serif, PT Sans and PT Sans Narrow](https://company.paratype.com/pt-sans-pt-serif))
 
 ![](previews/old-stylesheets.png)
@@ -76,12 +76,15 @@ Sample documents for development and testing.
 Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.com/file/lLZWGpxAc71dB5p8mI8Lkn/GitHub?node-id=0%3A1).
 
 <!--
-## Ideas
+## Style Ideas
 
-- Chromatophore: streamline/harmozine colors, esp in inverted mode. Reforma 2018 for some content? +inverted hr
+- Chromatophore: streamline/harmonize colors, esp in inverted mode. Reforma 2018 for some content? +inverted hr
 - Inria Serif (academic paper style? alinea indents? Gallimard-rubrication style? link in the style of "Atlas des Îles Abandonnées")
 - Fira Sans (FT style?)
 - Public Sans
 - Neon style (space grotesk or rubik for body? bg gradient, nth paragraph colors, glow or shadow punch-out effects)
+
+## Others
+
 - stream custom fonts from Google?
 -->

@@ -6,10 +6,12 @@ Please leave this notice in place, along with any additional credits below.
 Title: UXASF1
 Author: Jocelyn Richard
 URL: https://jocelynrichard.com/
-Description: Sans-serif style, with big text baseline and even bigger titles; used to render UXA documents.
-Fonts: Inter, iA Writer Mono
+Description:
+  - Sans-serif style, with big text baseline and even bigger titles; used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa)
+  - High contrast mode support
+  - Fonts: [Inter](https://rsms.me/inter/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono))
 Notes:
-  - Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in viewports
+  - Headings follow an augmented fourth scale; H1 being touched-up to reasonably fit in narrower viewports
   - H1/H2 have tight leading, with significant top-padding
   - H3 and below are extremely rare in UXA content, so they are barely styled here. Arbitrarily smaller bottom-padding to account for Inter's short descenders, and have visually similar top and bottom padding
   - Colors from the UXA style guide
