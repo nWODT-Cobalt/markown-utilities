@@ -78,11 +78,10 @@ Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.co
 <!--
 ## Style Ideas
 
-- Chromatophore: streamline/harmonize colors, esp in inverted mode. Reforma 2018 for some content? +inverted hr
-- Inria Serif (academic paper style? alinea indents? Gallimard-rubrication style? link in the style of "Atlas des Îles Abandonnées")
-- Fira Sans (FT style?)
+- Inria Serif: academic paper style, alinea indents, Gallimard-rubrication style, centered headings, links in the style of "Atlas des Îles Abandonnées", roman lists
+- Fira Sans:FT style?
 - Public Sans
-- Neon style (space grotesk or rubik for body? bg gradient, nth paragraph colors, glow or shadow punch-out effects)
+- Neon style: space grotesk or rubik for body, bg gradient, nth paragraph colors, glow or shadow punch-out effects
 
 ## Others
 
