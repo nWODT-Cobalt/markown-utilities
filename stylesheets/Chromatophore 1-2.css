@@ -193,7 +193,7 @@ img {
 table {
 	color: hsla(40, 6%, 10%, 0.8);
 	font-size: 0.85rem;
-	margin: 0 0 1.5rem 0;
+	margin: 1rem 0;
 	border-collapse: collapse;
 }
 
@@ -209,13 +209,17 @@ td {
 }
 
 caption,
+figcaption {
+	text-align: center;
+}
+
+caption,
 figcaption,
 #wrapper .footnotes ol li,
 #wrapper .footnotes p {
 	font-family: 'Reforma 1918', serif;
 	font-size: 0.85rem;
 	line-height: 1.5rem;
-	text-align: left;
 	color: hsla(40, 6%, 10%, 0.8);
 	margin: 0;
 }
