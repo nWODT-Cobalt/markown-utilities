@@ -12,6 +12,7 @@ Description:
   - Fonts: [Reforma 1918](https://pampatype.com/reforma)
 Notes:
   - Headings follow an augmented fourth scale, with identical top-bottom padding
+  - Tables use a big hack to achive the desired visual effect without access to a granular markup
   - Colors from https://github.com/nWODT-Cobalt/color-palettes/blob/main/1969.pdf
 ---
 */
@@ -200,12 +201,55 @@ table {
 table,
 th,
 td {
-	border: 1px solid hsla(40, 6%, 10%, 0.1);
+/* 	border: 1px solid hsla(40, 6%, 10%, 0.1); Previous, conventional style */
+	border: none;
 }
 
 th,
 td {
 	padding: 0.5rem;
+	text-shadow: 	0 1px 0 hsla(37, 57%, 93%, 1.00),
+					0 2px 0 hsla(37, 57%, 93%, 1.00),
+					0 3px 0 hsla(37, 57%, 93%, 1.00),
+					0 4px 0 hsla(37, 57%, 93%, 1.00),
+					0 5px 0 hsla(37, 57%, 93%, 1.00),
+					-5px 0 0 hsla(37, 57%, 93%, 1.00),
+					-4px 0 0 hsla(37, 57%, 93%, 1.00),
+					-3px 0 0 hsla(37, 57%, 93%, 1.00),
+					-2px 0 0 hsla(37, 57%, 93%, 1.00),
+					-1px 0 0 hsla(37, 57%, 93%, 1.00),
+					1px 0 0 hsla(37, 57%, 93%, 1.00),
+					2px 0 0 hsla(37, 57%, 93%, 1.00),
+					1px 0 0 hsla(37, 57%, 93%, 1.00),
+					3px 0 0 hsla(37, 57%, 93%, 1.00),
+					4px 0 0 hsla(37, 57%, 93%, 1.00),
+					5px 0 0 hsla(37, 57%, 93%, 1.00),
+					-5px 5px 0 hsla(37, 57%, 93%, 1.00),
+					-4px 4px 0 hsla(37, 57%, 93%, 1.00),
+					-3px 3px 0 hsla(37, 57%, 93%, 1.00),
+					-2px 2px 0 hsla(37, 57%, 93%, 1.00),
+					-1px 1px 0 hsla(37, 57%, 93%, 1.00),
+					5px 5px 0 hsla(37, 57%, 93%, 1.00),
+					4px 4px 0 hsla(37, 57%, 93%, 1.00),
+					3px 3px 0 hsla(37, 57%, 93%, 1.00),
+					2px 2px 0 hsla(37, 57%, 93%, 1.00),
+					1px 1px 0 hsla(37, 57%, 93%, 1.00);
+}
+
+tr th:first-of-type,
+tr td:first-of-type {
+	padding-left: 0;
+}
+
+tr th:last-of-type,
+tr td:last-of-type {
+	padding-right: 0;
+}
+
+tr  {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAPSURBVHgBY9Tk4pJkQAIABRkAWNrU1h8AAAAASUVORK5CYII=');
+	background-repeat: repeat-x;
+	background-position: left 0 bottom 0.75rem;
 }
 
 caption,
@@ -327,10 +371,35 @@ a {
 		color: hsla(25, 52%, 24%, 1.00);
 	}
 
-	.inverted table,
-	.inverted th,
-	.inverted td {
-		border-color: hsla(101, 8%, 60%, 1.00);
+	.inverted  th,
+	.inverted  td {
+		padding: 0.5rem;
+		text-shadow: 	0 1px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						0 2px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						0 3px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						0 4px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						0 5px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-5px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-4px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-3px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-2px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-1px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						1px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						2px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						1px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						3px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						4px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						5px 0 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-5px 5px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-4px 4px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-3px 3px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-2px 2px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						-1px 1px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						5px 5px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						4px 4px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						3px 3px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						2px 2px 0 hsla(146, 31%, 82%, 1.00), /* Interpolée depuis d'autres couleurs de la palette */
+						1px 1px 0 hsla(37, 57%, 93%, 1.00);
 	}
 
 	.inverted caption,
