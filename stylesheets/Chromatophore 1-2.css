@@ -200,8 +200,8 @@ table {
 
 table,
 th,
-td {
-/* 	border: 1px solid hsla(40, 6%, 10%, 0.1); Previous, conventional style */
+td,
+#wrapper table a:link { /* otherwise weird artefact with the text-shadow */ 
 	border: none;
 }
 
