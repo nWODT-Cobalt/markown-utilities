@@ -138,7 +138,7 @@ dd {
 
 #wrapper a:link {
 	color: hsla(227, 56%, 41%, 1.00);
-	font-weight: 400;
+/* 	font-weight: 400; to be deleted */
 	text-decoration: none;
 	border-bottom: 1px solid hsla(227, 56%, 41%, 1.00);
 }
