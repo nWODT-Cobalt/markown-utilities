@@ -212,6 +212,10 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	margin: 1rem 0;
+}
+
 table {
 	font-family: 'iA Writer Mono V', monospace;
 	font-size: 0.85rem;

@@ -192,6 +192,10 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	margin: 1.5rem 0;
+}
+
 table {
 	color: hsla(40, 6%, 10%, 0.8);
 	font-size: 0.85rem;

@@ -81,7 +81,7 @@ Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.co
 - Inria Serif: academic paper style, alinea indents, Gallimard-rubrication style, centered headings, links in the style of "Atlas des Îles Abandonnées", roman lists
 - Fira Sans:FT style?
 - Public Sans
-- Neon style: space grotesk or rubik for body, bg gradient, nth paragraph colors, glow or shadow punch-out effects
+- Neon style: space grotesk or rubik for body, bg gradient, nth paragraph colors, glow or shadow punch-out effects, animated hovers
 
 ## Others
 
