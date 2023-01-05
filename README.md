@@ -24,7 +24,7 @@ Can be added to Marked through `Preferences`/`Style`.
 ### Chromatophore 1-2
 
 - Colorful theme for lighter content
-- High contrast mode isn’t actually higher contrast, but an alternate color scheme
+- Dark mode isn’t actually darker, but an alternate color scheme
 - Fonts: [Reforma](https://pampatype.com/reforma)
 
 ![](previews/chromatophore-1-2.png)
@@ -33,7 +33,7 @@ Can be added to Marked through `Preferences`/`Style`.
 
 - High legibility, low strain style for long-form reading
 - Good print support
-- High contrast mode support
+- Dark mode support
 - Fonts: [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Quattro](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
 
 ![](previews/tetra.png)
@@ -41,7 +41,7 @@ Can be added to Marked through `Preferences`/`Style`.
 ### UXASF1
 
 - Sans-serif style, with big text baseline and even bigger titles; used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa)
-- High contrast mode support
+- Dark mode support
 - Fonts: [Inter](https://rsms.me/inter/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono)
 
 ![](previews/uxasf1.png)
@@ -49,12 +49,12 @@ Can be added to Marked through `Preferences`/`Style`.
 ### Just Images
 
 - Hides everything but images; for reference or print
-- High contrast mode support
+- Dark mode support
 
 ### Just Tables
 
 - Hides everything but tables; for reference or print
-- High contrast mode support
+- Dark mode support
 
 ### Older Stylesheets
 
