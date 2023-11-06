@@ -51,7 +51,7 @@ body {
 
 #wrapper {
 	font-family: 'Inter', sans-serif;
-	padding-bottom: 9rem !important; /* Purely subjective */
+	padding-bottom: 9rem !important; /* Arbitrary */
 }
 
 h1 {
@@ -210,6 +210,8 @@ pre code {
 img {
 	height: auto;
 	max-width: 100%;
+	border: 1px solid #232323; /* only when printing? */
+	box-sizing: border-box;
 }
 
 figure {
@@ -221,12 +223,13 @@ table {
 	font-size: 0.85rem;
 	margin: 0 0 1.5rem 0;
 	border-collapse: collapse;
+	width: 100%;
 }
 
 table,
 th,
 td {
-	border: 1px solid hsla(0, 0%, 47%, 1); /* Gris 0435 #797979 */
+	border: 1px solid #232323;
 }
 
 th,
