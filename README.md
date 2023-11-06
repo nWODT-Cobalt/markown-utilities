@@ -23,11 +23,18 @@ Can be added to Marked through `Preferences`/`Style`.
 
 ### Chromatophore 1-2
 
-- Colorful theme for lighter content
+- Colorful style for lightweight content
 - Dark mode isn’t actually darker, but an alternate color scheme
 - Fonts: [Reforma](https://pampatype.com/reforma)
 
 ![](previews/chromatophore-1-2.png)
+
+### Log
+
+- A barebones log style based on the `Tetra` style
+- Fonts: [Milkman](https://uncut.wtf/sans-serif/milkman/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Quattro](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
+
+![](previews/log.png)
 
 ### Tetra
 
@@ -81,7 +88,7 @@ Previews are processed (e.g. cropped) in [a Figma document](https://www.figma.co
 - Inria Serif: academic paper style, alinea indents, Gallimard-rubrication style, centered headings, links in the style of "Atlas des Îles Abandonnées", roman lists
 - Fira Sans:FT style?
 - Public Sans
-- Neon style: space grotesk or rubik for body, bg gradient, nth paragraph colors (randomized?), glow or shadow punch-out effects, animated hovers, block-quotes soulignées et avec leading color block genre the verge
+- Neon style: space grotesk or rubik for body, bg gradient, nth paragraph colors (randomized?), ntn words offset/tilted, glow or shadow punch-out effects, animated hovers, block-quotes soulignées et avec leading color block genre the verge
 
 ## Others
 

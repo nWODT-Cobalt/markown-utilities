@@ -1,0 +1,545 @@
+/*
+This document has been created with Marked.app <https://marked2app.com>
+Content is property of the document author
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: Log
+Author: Jocelyn Richard
+URL: https://jocelynrichard.com/
+Description:
+  - A barebones log style based on the `Tetra` style
+  
+  - Fonts: [Milkman](https://uncut.wtf/sans-serif/milkman/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Quattro](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
+---
+*/
+
+/* ------------------------------ */
+/* Reset */
+/* ------------------------------ */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, em, strong, a, blockquote, pre, code, dl, dt, dd, sup, sub,
+#wrapper ol, #wrapper ul, #wrapper li,
+img, figure, figcaption, table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* ------------------------------ */
+/* Styles */
+/* ------------------------------ */
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: hsla(0, 0%, 99%, 1); /* #FCFCFC */
+	color: hsla(0, 0%, 13%, 1); /* #222222 */
+}
+
+#wrapper {
+	font-family: 'iA Writer Quattro V', sans-serif;
+	padding-bottom: 9rem !important; /* Purely subjective */
+}
+
+h1 {
+	font-size: 3.052rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 5rem 0 1.5rem 0;
+}
+
+h2 {
+	font-size: 2.441rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 3.5rem 0 1.5rem 0;
+}
+
+h3 {
+	font-size: 1.953rem;
+	line-height: 1.2;
+	margin: 2rem 0 1.5rem 0;
+}
+
+h4 {
+	font-size: 1.563rem;
+	line-height: 1.2;
+	margin: 1.5rem 0 1.5rem 0;
+}
+
+h5 {
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 1rem 0 0.75rem 0;
+}
+
+h6 {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin: 1rem 0 0.75rem 0;
+}
+
+p,
+dl,
+#wrapper ol,
+#wrapper ul {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.75;
+	margin: 0.5rem 0;
+}
+
+dt {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.75;
+}
+
+dd {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.75;
+	margin: 0 0 0.5rem 0;
+}
+
+#wrapper ul,
+#wrapper ol {
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+#wrapper ol {
+	counter-reset: compteur 0;
+}
+
+#wrapper ol > li {
+	counter-increment: compteur;
+	padding: 0;
+}
+
+#wrapper ul > li:before {
+	content: "–";
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin-right: 1rem;
+}
+
+#wrapper ol > li:before {
+	content: counter(compteur) ".";
+	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
+	margin-right: 0.5rem;
+}
+
+#wrapper ul > li,
+#wrapper ol > li {
+  text-indent: -1.7rem;
+  padding-left: 1.75rem;
+}
+
+#wrapper li p { /* For complex lists whose li include a p when processed by Marked */
+  text-indent: 0;
+}
+
+#wrapper ul p:first-of-type,
+#wrapper ol p:first-of-type { /* For complex lists whose li include a p when processed by Marked */
+  display: inline;
+}
+
+#wrapper ul ul,
+#wrapper ul ol,
+#wrapper ol ul,
+#wrapper ol ol {
+	margin: 0 0 0 1rem;
+}
+
+#wrapper a:link {
+	color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
+	text-decoration: none;
+	border-bottom: 2px solid hsla(212, 100%, 37%, 0.2); /* Bleu 0660 Atténué #0059BF */
+}
+
+#wrapper a:hover {
+	border-color: #0059BF;
+}
+
+#wrapper a:active {
+	color: #0081C0;
+	border-color: #0081C0;
+} 
+
+#wrapper a:visited {
+	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
+	border-color: hsla(252, 94%, 65%, 0.2); /* Mauve 0483 #7552FA */
+}
+
+#wrapper a:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #0059BF;
+	border-radius: 1px;
+	padding: 2px;
+}
+
+blockquote {
+	font-style: italic;
+	margin: 1.5rem 0;
+	padding-left: 1rem;
+	border-left: 2px solid hsla(0, 0%, 13%, 0.2); /* #222222 */
+}
+
+code {
+	font-family: 'iA Writer Mono V', monospace;
+	font-size: 100%;
+	background-color: hsla(0, 0%, 13%, 0.05); /* #222222 */
+	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+pre {
+	background-color: hsla(0, 0%, 13%, 0.03); /* #222222 */
+	border-radius: 12px;
+	margin: 1.5rem 0;
+	padding: 0.5rem;
+}
+
+pre code {
+	font-size: 0.85rem;
+	background-color: transparent;
+	padding: 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1.5rem 0;
+}
+
+table {
+	font-family: 'iA Writer Mono V', monospace;
+	font-size: 0.85rem;
+	margin: 1.5rem 0;
+	border-collapse: collapse;
+	border: none;
+}
+
+th,
+td {
+	padding: 0.5rem 1rem;
+}
+
+tr th:first-of-type,
+tr td:first-of-type {
+	padding-left: 0;
+}
+
+tr th:last-of-type,
+tr td:last-of-type {
+	padding-right: 0;
+}
+
+th {
+	font-weight: 600;
+	border-bottom: 2px solid hsla(0, 0%, 13%, 1); /* #222222 */
+}
+
+tr {
+	border-bottom: 1px solid hsla(0, 0%, 13%, 0.1); /* #222222 */	
+}
+
+tr:last-child {
+	border-bottom: none;
+}
+
+caption,
+figcaption,
+#wrapper .footnotes ol li,
+#wrapper .footnotes p {
+	font-size: 0.85rem;
+	font-style: italic;
+	line-height: 1.75;
+	text-align: left;
+	color: hsla(0, 0%, 13%, 0.75); /* #222222 */
+	margin: 0;
+}
+
+#wrapper .footnotes p { /* Hacky; surely could be done otherwise */
+	display: inline;
+	margin-left: 0;
+}
+
+#wrapper .footnotes ol > li:before { /* Hacky; surely could be done otherwise */
+	margin-right: 0;
+}
+
+#wrapper a.footnote {
+	font-size: 0.85rem;
+	font-weight: 500;
+	margin-left: 0.25rem;
+	padding-bottom: 0.125rem;
+	position: relative;
+	top: -0.025rem;
+}
+
+hr {
+	width: 100%;
+	border-top: 2px solid hsla(0, 0%, 13%, 0.2); /* #222222 */
+	margin: 5rem auto;
+	clear: none;
+}
+
+::selection {
+	background-color: hsla(252, 94%, 65%, 0.1); /* Mauve 0483 #7552FA */
+	color: hsla(252, 94%, 65%, 1); /* Mauve 0483 #7552FA */
+}
+
+#firstdiff::before { /* Marked edit marker */
+	color: hsla(252, 94%, 65%, 1) !important; /* Mauve 0483 #7552FA */
+}
+
+#wrapper .mkstyledtag { /* Marked tags */
+	background-color: hsla(212, 100%, 37%, 0.1); /* Bleu 0660 Atténué #0059BF */
+	color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
+	border-radius: 999px;
+	padding: 0.3rem 0.75rem !important;
+}
+
+h1,
+h2,
+a, /* :link ? */
+pre,
+pre code { /* From https://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+	white-space:      pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space:     -pre-wrap; /* Opera 4-6 */
+	white-space:   -o-pre-wrap;	/* Opera 7 */
+	word-wrap:      break-word; /* Internet Explorer 5.5+ */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote { /* Transitioning p elements might cause duplication bugs when printing. Somehow can't be mitigated by print styles. */
+	transition: all 0.2s ease;
+}
+
+a {
+	transition: all 0.1s ease-in-out;
+}
+
+/* ------------------------------ */
+/* Inverted */
+/* ------------------------------ */
+
+@media screen {
+
+	.inverted,
+	.inverted #wrapper {
+		background-color: hsla(0, 0%, 13%, 1); /* #222222 */
+		color: hsla(0, 0%, 99%, 1); /* FCFCFC */
+	}
+	
+	.inverted h6 {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
+	}
+
+	.inverted #wrapper ul > li:before,
+	.inverted #wrapper ol > li:before {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
+	}
+
+	.inverted #wrapper a:link {
+		color: hsla(202, 100%, 71%, 1);
+		border-color: hsla(202, 100%, 71%, 1);
+	}
+
+	.inverted #wrapper a:hover {
+		border-color: hsla(175, 81%, 60%, 1); /* Vert 046 #48ECDD */
+		color: hsla(175, 81%, 60%, 1); /* Vert 046 #48ECDD */
+	}
+	
+	.inverted #wrapper a:active {
+		border-color: #FFFFFF;
+		color: #FFFFFF;
+	}
+	
+	.inverted #wrapper a:visited {
+		border-color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
+		color: hsla(212, 100%, 37%, 1); /* Bleu 0660 Atténué #0059BF */
+	}
+
+	.inverted blockquote {
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
+	}
+	
+	.inverted code {
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */
+	}
+	
+	.inverted pre {
+		background-color: hsla(0, 0%, 99%, 0.1); /* FCFCFC */
+	}
+	
+	.inverted pre code {
+		background-color: transparent;
+	}
+
+	.inverted th {
+		border-color: hsla(0, 0%, 99%, 1); /* FCFCFC */
+	}
+
+	.inverted tr {
+		border-color: hsla(0, 0%, 99%, 0.4); /* FCFCFC */
+	}
+
+	.inverted caption,
+	.inverted figcaption,
+	.inverted #wrapper .footnotes ol li,
+	.inverted #wrapper .footnotes p {
+		color: hsla(0, 0%, 99%, 0.75); /* FCFCFC */	
+	}
+
+	.inverted hr {
+		border-color: hsla(0, 0%, 99%, 1); /* FCFCFC */
+	}
+	
+	.inverted ::selection {
+		background-color: hsla(252, 100%, 76%, 0.1);
+		color: hsla(252, 100%, 76%, 1);
+	}
+	
+	.inverted #firstdiff::before { /* Marked edit marker */
+		color: hsla(252, 100%, 76%, 1) !important;
+	}
+
+	.inverted #wrapper .mkstyledtag { /* Marked tags */
+		background-color: transparent;
+		color: hsla(202, 100%, 71%, 1);
+		border: 2px solid hsla(202, 100%, 71%, 1);
+	}
+
+}
+
+/* ------------------------------ */
+/* Responsiveness */
+/* ------------------------------ */
+
+@media screen and (min-width: 961px) {
+	
+	html {
+		font-size: 20px;
+	}
+	
+}
+
+/* ------------------------------ */
+/* Print */
+/* ------------------------------ */
+
+@media print {
+
+	html {
+		 color: #000000 !important; /* Black prints faster */
+	}
+	
+	#wrapper {
+		padding-bottom: 0 !important;
+	}
+		
+	#wrapper a:link {
+		color: #000000;
+		text-decoration: underline;
+		border-bottom: none;
+	}
+
+	#wrapper ul,
+	#wrapper ol {
+		margin-left: 0;
+		list-style-position: inside;
+	}
+
+	#wrapper ul > li,
+	#wrapper ol > li {
+		text-indent: 0;
+	}
+	
+	img,
+	pre,
+	blockquote,
+	table,
+	figure,
+	p {
+		page-break-inside: avoid;
+	}
+
+}
+
+/* ------------------------------ */
+/* Overrides */
+/* ------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Milkman', serif;
+}
+
+h2 { /* Styling the h2 like the h1 */
+	font-size: 3.052rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 5rem 0 1.5rem 0;
+	text-transform: uppercase;
+}
+
+p {
+	text-shadow: 0px 1px 1px hsla(0, 0%, 99%, 1), /* #FCFCFC */
+				 1px 0px 1px hsla(0, 0%, 99%, 1),
+				 -1px 0px 1px hsla(0, 0%, 99%, 1),
+				 0px -1px 1px hsla(0, 0%, 99%, 1),
+				 0px 0px 8px hsla(0, 0%, 99%, 1);
+}
+
+img {
+	height: auto;
+	max-width: 48%;
+	margin: 0 0.5rem 0.35rem 0; /* 0.35 instead of 0.5 because of some spontaneous bottom padding */
+}
+
+p:has(> img) {
+	display: inline;
+	position: relative;
+	top: -2rem;
+	left: 4rem;
+	z-index: -999;
+	font-size: 0;
+}
+
+/* Inverted */
+
+@media screen {
+
+	.inverted p {
+	text-shadow: 1px 1px 1px hsla(0, 0%, 13%, 1), /* #222222 */
+				 0px 0px 8px hsla(0, 0%, 13%, 0.8);
+				 
+	}
+
+}
