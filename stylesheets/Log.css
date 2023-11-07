@@ -506,7 +506,7 @@ h2 { /* Styling the h2 like the h1 */
 	font-weight: 800;
 	line-height: 1.2;
 	margin: 5rem 0 1.5rem 0;
-	text-transform: uppercase;
+	text-transform: uppercase; /* To get Milkman's alternate characters */
 }
 
 p {
@@ -520,7 +520,7 @@ p {
 img {
 	height: auto;
 	max-width: 48%;
-	margin: 0 0.5rem 0.35rem 0; /* 0.35 instead of 0.5 because of some spontaneous bottom padding */
+	margin: 0 0.5rem 0.35rem 0; /* 0.35 instead of 0.5 because of some ghost bottom padding */
 }
 
 p:has(> img) {
@@ -530,6 +530,25 @@ p:has(> img) {
 	left: 4rem;
 	z-index: -999;
 	font-size: 0;
+/* 	transition: top 500ms; */
+}
+
+/* Inutile car le position: relative plante le z-index
+p:has(> img:hover) {
+	top: 0;
+	transition: top 150ms;
+}
+*/
+
+::selection {
+	background-color: #0ABF84; /* Vert 0238 Atténué */ /*Hmmm pourquoi la sélection est translucente plutôt que opaque ?*/
+	color: hsla(0, 0%, 99%, 1); /* #FCFCFC */
+	text-shadow: none;
+}
+
+#firstdiff::before { /* Marked edit marker */
+	color: #0ABF84 !important; /* Vert 0238 Atténué */
+	text-shadow: none;
 }
 
 /* Inverted */
@@ -538,8 +557,14 @@ p:has(> img) {
 
 	.inverted p {
 	text-shadow: 1px 1px 1px hsla(0, 0%, 13%, 1), /* #222222 */
-				 0px 0px 8px hsla(0, 0%, 13%, 0.8);
-				 
+				 0px 0px 8px hsla(0, 0%, 13%, 0.8);		 
+	}
+	
+	.inverted ::selection {
+	background-color: #E6FFB9; /* Vert 0108 Inverse Light */
+	color: hsla(0, 0%, 13%, 1); /* #222222 */
+	text-shadow: 1px 1px 1px #0ABF84, /* Vert 0238 Atténué */
+				 0px 0px 8px #0ABF84; /* Vert 0238 Atténué */
 	}
 
 }
