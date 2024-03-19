@@ -58,6 +58,15 @@ h3 {
 	color: hsla(227, 48%, 29%, 1.00); /* Interpolée depuis d'autres couleurs de la palette */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+}
+
 h1 {
 	font-size: 3.998rem;
 	line-height: 1.1;
