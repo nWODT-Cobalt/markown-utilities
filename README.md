@@ -4,16 +4,16 @@ Tools for editing, rendering and exporting Markdown files.
 
 ## Markdown Setup
 
-On Mac: [Atom](https://atom.io/) for editing, [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
+On Mac: ~~[Atom](https://atom.io/)~~ [Pulsar](https://pulsar-edit.dev/) for editing, [Marked](https://marked2app.com/) for rendering. [Markdown Tables generator](https://www.tablesgenerator.com/markdown_tables) for table-heavy documents.  
 On iOS/Android: [iA Writer](https://ia.net/writer).
 
 Atom is well-suited to Markdown out of the box, but a couple extra packages make it more convenient:
 
-- [document-outline](https://atom.io/packages/document-outline)
-- [folding-markdown](https://atom.io/packages/folding-markdown)
-- [markdown-table-editor](https://atom.io/packages/markdown-table-editor)
-- [smart-quotes-plus](https://atom.io/packages/smart-quotes-plus)
-- [wordcount](https://atom.io/packages/wordcount)
+- [document-outline](https://web.pulsar-edit.dev/packages/document-outline)
+- [folding-markdown](https://web.pulsar-edit.dev/packages/folding-markdown)
+- [markdown-table-editor](https://web.pulsar-edit.dev/packages/markdown-table-editor)
+- [smart-quotes-plus](https://web.pulsar-edit.dev/packages/smart-quotes-plus)
+- [wordcount](https://web.pulsar-edit.dev/packages/wordcount)
 
 ## Stylesheets
 
