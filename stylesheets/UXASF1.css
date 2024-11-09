@@ -54,6 +54,15 @@ body {
 	padding-bottom: 9rem !important; /* Arbitrary */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
 h1 {
 	font-size: 5rem;
 	font-weight: 900;
@@ -92,6 +101,10 @@ h6 {
 	line-height: 1.75;
 	text-transform: uppercase;
 	margin: 1.5rem 0 1.25rem 1.5rem;
+}
+
+p {
+	text-wrap: pretty;
 }
 
 p,

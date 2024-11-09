@@ -8,7 +8,6 @@ Author: Jocelyn Richard
 URL: https://jocelynrichard.com/
 Description:
   - A barebones log style based on the `Tetra` style
-  
   - Fonts: [Milkman](https://uncut.wtf/sans-serif/milkman/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), [iA Writer Quattro](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
 ---
 */
@@ -48,6 +47,15 @@ body {
 	padding-bottom: 9rem !important; /* Purely subjective */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
 h1 {
 	font-size: 3.052rem;
 	font-weight: 800;
@@ -85,6 +93,10 @@ h6 {
 	line-height: 1.5;
 	color: hsla(0, 0%, 13%, 0.5); /* #222222 */
 	margin: 1rem 0 0.75rem 0;
+}
+
+p {
+	text-wrap: pretty;
 }
 
 p,

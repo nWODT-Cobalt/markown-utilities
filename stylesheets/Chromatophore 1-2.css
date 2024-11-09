@@ -65,6 +65,7 @@ h4,
 h5,
 h6 {
 	text-align: center;
+	text-wrap: balance;
 }
 
 h1 {
@@ -103,6 +104,10 @@ h6 {
 	line-height: 1.75;
 	text-transform: uppercase;
 	margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+p {
+	text-wrap: pretty;
 }
 
 p,

@@ -11,6 +11,7 @@ Atom is well-suited to Markdown out of the box, but a couple extra packages make
 
 - [document-outline](https://web.pulsar-edit.dev/packages/document-outline)
 - [folding-markdown](https://web.pulsar-edit.dev/packages/folding-markdown)
+- [language-markdown](https://web.pulsar-edit.dev/packages/language-markdown)
 - [markdown-table-editor](https://web.pulsar-edit.dev/packages/markdown-table-editor)
 - [smart-quotes-plus](https://web.pulsar-edit.dev/packages/smart-quotes-plus)
 - [wordcount](https://web.pulsar-edit.dev/packages/wordcount)
