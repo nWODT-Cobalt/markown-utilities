@@ -46,13 +46,13 @@ Can be added to Marked through `Preferences`/`Style`.
 
 ![](previews/tetra.png)
 
-### UXASF1
+### UXA
 
 - Sans-serif style, with big text baseline and even bigger titles; used to render [UXA documents](https://github.com/nWODT-Cobalt/uxa)
 - Dark mode support
 - Fonts: [Inter](https://rsms.me/inter/), [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono)
 
-![](previews/uxasf1.png)
+![](previews/uxa.png)
 
 ### Just Images
 
